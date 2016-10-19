@@ -98,7 +98,7 @@ div.clear{
 	width: 100%;
 	height: 50px;
 	line-height: 50px;
-	font-size: 14px;
+	font-size: 18px;
 	color: #404040;
 }
 .indexHeader .indexHeaderNav ul li.navBlock a:hover{
@@ -121,7 +121,7 @@ div.clear{
 	color: #aaa;
 	display: block;
 	width: 100%;
-	font-size: 14px;
+	font-size: 18px;
 	height: 50px;
 	text-align: center;
 }
@@ -157,7 +157,7 @@ div.clear{
 	width: 120px;
 	height: 50px;
 	line-height: 50px;
-	font-size: 18px;
+	font-size: 20px;
 	text-align: center;
 	float: left;
 }	
@@ -166,7 +166,7 @@ div.clear{
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
-	font-size: 14px;
+	font-size: 16px;
 	float: right;
 	color: #aaa;	
 }
@@ -184,7 +184,7 @@ div.clear{
 	white-space: nowrap; 
     text-overflow: ellipsis; 
     overflow: hidden; 
-    font-size: 14px;
+    font-size: 16px;
     height: 24px;
     line-height: 24px;
     color: 	#404040;
@@ -198,7 +198,7 @@ div.clear{
 	height: 120px;
 	background: #1198bb;
 	color: white;
-	font-size: 14px;
+	font-size: 18px;
 	padding-top: 20px;
 }
 .indexFooter li{
