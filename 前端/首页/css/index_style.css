@@ -41,7 +41,7 @@ div.clear{
 }
 .indexHeader .indexHeaderTittle{
 	margin: 0 auto;
-	width: 60%;
+	width:1190px;
 	height: 150px;
 }
 .indexHeader .indexHeaderNav{
@@ -78,7 +78,7 @@ div.clear{
 }
 .indexHeader .indexHeaderNav ul{
 	display: block;
-	width: 60%;
+	width:1190px;
 	margin: 0 auto;
 }
 .indexHeader .indexHeaderNav ul li.navBlock{
@@ -133,7 +133,7 @@ div.clear{
 	z-index: 1;
 }
 .indexMain .indexMainBanner{
-	width: 60%;
+	width:1190px;
 	margin: 0 auto;
 	height: 400px;
 }
@@ -141,7 +141,7 @@ div.clear{
 	height: 100%;
 }
 .indexMain .indexMainInner{
-	width: 60%;
+	width:1190px;
 	margin: 0 auto;
 }
 .indexMain .indexMainInner .indexMainLeft{
