@@ -1,0 +1,51 @@
+.containAbout{
+	width:1190px;
+	margin: 0 auto;
+	/*height: 800px;*/
+}
+.containLeft{
+	width: 300px;
+	/*height: 600px;*/
+	background: #f2f2f2;
+}
+.containLeft h3{
+	color: #474747;
+	font-size: 28px;
+	text-align:center; 
+	padding: 60px 0 ;
+}
+.navContain li{
+	width: 100%;
+	display: inline-block;
+	color: #474747;
+	text-align:center; 
+	height: 48px;
+	line-height: 48px;
+	-webkit-transition:background 0.5s linear;
+    -moz-transition:background 1s linear;
+    -ms-transition:background 1s linear;
+    -o-transition:background 1s linear;
+    transition:background 0.5s linear;
+}
+.navContain li:hover{
+	background-color: white;
+}
+.navContain li:last-child{
+	margin-bottom: 40px;
+}
+.navSlide{
+}
+.navSlide li{
+	color: #474747;
+	text-align:left; 
+	height: 48px;
+	line-height: 48px;
+	padding-left: 150px; 
+}
+.on{
+	background: url(../images/bluebar.png) no-repeat;
+	background-color: white;
+}
+.hide{
+	display: none;
+}
