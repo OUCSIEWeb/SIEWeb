@@ -1,3 +1,6 @@
+a{
+	color: #474747;
+}
 .containAbout{
 	width:1190px;
 	margin: 0 auto;
@@ -21,19 +24,23 @@
 	text-align:center; 
 	height: 48px;
 	line-height: 48px;
-	-webkit-transition:background 0.5s linear;
-    -moz-transition:background 1s linear;
-    -ms-transition:background 1s linear;
-    -o-transition:background 1s linear;
-    transition:background 0.5s linear;
+	-webkit-transition:background 0.3s linear;
+    -moz-transition:background 0.3s linear;
+    -ms-transition:background 0.3s linear;
+    -o-transition:background 0.3s linear;
+    transition:background 0.3s linear;
 }
 .navContain li:hover{
 	background-color: white;
 }
-.navContain li:last-child{
+.navContain>li:last-child{
 	margin-bottom: 40px;
 }
 .navSlide{
+	display: inline-block;
+}
+.navSlide a{
+	color: #474747;
 }
 .navSlide li{
 	color: #474747;
