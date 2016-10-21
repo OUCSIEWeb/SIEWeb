@@ -56,3 +56,22 @@ a{
 .hide{
 	display: none;
 }
+.indexMainBanner{
+	margin-bottom:20px;
+}
+.containRight{
+	padding: 20px;
+	width: 890px;
+}
+.containRight,.containLeft{
+	float:left;
+	margin-bottom:20px;
+}
+.clearFloat{
+	clear:both;
+}
+/*.containRight *{
+	margin:auto;
+	text-align:center;
+}*/
+/*被封印的css*/
