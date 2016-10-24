@@ -1,5 +1,6 @@
 window.onload = function(){
 		$(".navSlideDown").css("display","none");
+		$("ul.notice").css("display","none");
 		$(".navBlock").hover(function(){
     		$(this).children(".navSlideDown").stop(true, false).slideDown();
 		}, function(){
@@ -11,9 +12,12 @@ window.onload = function(){
 			$(this).addClass("mainThis");
 		})
 
-		// $(".search>input").focus(function(){
-		// 	$(this).placeholder('');
-		// },$(".search>input").blur(function(){
-		// 	$(this).placeholder('搜索');
-		// }))
+		$(".indexMainTittleSecond").click(function(){
+			$("ul.notice").css("display","block");
+			$("ul.news").css("display","none");
+		})
+		$(".indexMainTittleFirst").click(function(){
+			$("ul.notice").css("display","none");
+			$("ul.news").css("display"," block");
+		})
 	}
