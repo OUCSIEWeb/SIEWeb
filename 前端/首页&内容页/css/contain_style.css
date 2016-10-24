@@ -70,6 +70,74 @@ a{
 .clearFloat{
 	clear:both;
 }
+.containRight h1:first-child{
+	border-bottom: #c2c2c2 1px dotted;
+	padding-bottom: 15px;
+	font-size: 18px;
+	font-family:'微软雅黑';
+}
+.containRight .alignCenter{
+	text-align:center;
+}
+.FAQFormArea>div>.FAQFormLeft,.FAQFormArea>div>.FAQFormRight{
+	float:left;
+}
+
+/*这里是表单域的宽度定义*/
+.FAQFormLeft{
+	width:30%;
+	text-align:center;
+	padding:10px 0px;
+}
+.FAQFormRight{
+	width: 70%;
+	padding:10px 0px;
+}                       
+.FAQFormRight *{        
+	width:50%;
+}
+
+
+.FAQTitle{
+	width:32%;
+	float:left;
+	text-align:left;
+}
+.FAQName{
+	width:32%;
+	float:left;
+	text-align:center;
+}
+.FAQTime{
+	width:32%;
+	float:left;
+	text-align:right;
+}
+.FAQContent{
+	margin-left:4px;
+	text-indent:2em;
+	line-height: 1.5;
+}
+.FAQList li>div{
+	padding:10px 4px;
+}
+.FAQList{
+	width: 80%;
+	margin: auto;
+}
+.FAQBrief{
+	background-color:#f7f7f7;
+}
+.FAQRepeat{
+	line-height: 1.5;
+	background-color:#f7f7f7;
+}
+.FAQRepeatWord{
+	color:#FF0000;
+}
+/*如果不合适请直接删掉*/
+
+
 /*.containRight *{
 	margin:auto;
 	text-align:center;

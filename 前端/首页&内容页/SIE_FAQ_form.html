@@ -16,7 +16,7 @@
 <!-- 导航栏的ul li结构还是比较清晰的 应该能用 但是字数不能超过8个汉字 -->
 <!-- 侧边栏的ul li结构也比较清晰 如果需要使该行标亮 只需使该行li的class为"on" -->
 <!-- 如果文章内容渲染无法很好的居中 可以去contain_style.css内 把最后的一条注释掉的css恢复为正常状态 -->
-<!-- 图片轮播的图片插在 img-responsive 这个类缩对应的img标签 -->
+<!-- 图片轮播的图片插在 img-responsive 这个类 对应的img标签 -->
 
 <body>
 	<div class="indexHeader">
@@ -105,7 +105,39 @@
 			</ul>
 		</div>
 		<div class="containRight">
-			<h1>标题</h1><!-- 要让这个标题居中 给标签添加class为'alignCenter' -->
+			<h1 class="alignCenter">我要提问</h1>
+			<div class="FAQFormArea">
+				<div class="FAQFormTitle">
+					<div class="FAQFormLeft">标题:</div> <!-- 左边写要求 右边放表单-->
+					<div class="FAQFormRight"><input type="text"/></div> <!-- 如果排版不适应请到contain_style.css 的90行附近修改-->
+					<div class="clearFloat"></div>
+				</div>
+				<div class="FAQFormName">
+					<div class="FAQFormLeft">姓名:</div>
+					<div class="FAQFormRight"><input type="text"/></div>
+					<div class="clearFloat"></div>
+				</div>
+				<div class="FAQFormMail">
+					<div class="FAQFormLeft">邮箱:</div>
+					<div class="FAQFormRight"><input type="text"/></div>
+					<div class="clearFloat"></div>
+				</div>
+				<div class="FAQFormContent">
+					<div class="FAQFormLeft">内容:</div>
+					<div class="FAQFormRight"><textarea name="body" cols="45" rows="8"></textarea></div>
+					<div class="clearFloat"></div>
+				</div>
+				<div class="FAQFormValidation">
+					<div class="FAQFormLeft">验证码:</div>
+					<div class="FAQFormRight"><input size="10" type="text" style="width:100px"><img src=""style="width:100px;height:100%"></div>
+					<div class="clearFloat"></div>
+				</div>
+				<div class="FAQFormSubmit">
+					<div class="FAQFormLeft"></div>
+					<div class="FAQFormRight"><button style="width:100px">提交留言</button></div>
+					<div class="clearFloat"></div>
+				</div>
+			</div>
 		</div>
 		<div class="clearFloat"></div>
 	</div>
