@@ -18,6 +18,6 @@ window.onload = function(){
 		})
 		$(".indexMainTittleFirst").click(function(){
 			$("ul.notice").css("display","none");
-			$("ul.news").css("display"," block");
+			$("ul.news").css("display","block");
 		})
 	}
