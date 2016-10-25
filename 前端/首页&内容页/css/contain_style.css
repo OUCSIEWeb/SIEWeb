@@ -135,6 +135,38 @@ a{
 .FAQRepeatWord{
 	color:#FF0000;
 }
+.FAQList li{
+	padding:10px 0px;
+}
+
+.leaderTable tr td:first-child{
+	width:11%;
+}
+.leaderTable tr td:first-child+td{
+	width:9%;
+}
+.leaderTable tr td:first-child+td+td{
+	width:16%;
+}
+.leaderTable tr td:first-child+td+td+td{
+	width:19%;
+}
+.leaderTable tr td:first-child+td+td+td+td{
+	width:20%;
+}
+.leaderTable tr td:first-child+td+td+td+td+td{
+	width:23%;
+}
+.leaderTable td{
+	border:inset black 1.0pt;
+}
+.leaderTable tr td p{
+	margin-left:0cm;text-align:center;
+}
+.leaderTable tr td p span{
+	font-size:14px;
+	font-family:'宋体';
+}
 /*如果不合适请直接删掉*/
 
 
