@@ -1,0 +1,148 @@
+html{height: 100%;}
+body{height: 100%;}
+body,div,dl,dt,dd,ul,ol,li,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body,h1 { color:#555; font-family: "微软雅黑",Verdana, Arial, Helvetica, sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; font-family: "微软雅黑",Verdana, Arial, Helvetica, sans-serif;}
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { text-decoration:none; }
+a:link{text-decoration: none;}
+a:visited { text-decoration: none !important;}
+a:hover { text-decoration:none; }
+a:active { text-decoration:none !important; }
+img { border:none; }
+ol,ul,li { list-style:none; margin-bottom: 0;}
+input, textarea, select, button,li,span,p { font-family: "微软雅黑",Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+div.clear{
+	clear:both;
+}
+/*后台登录页*/
+.container {
+    margin: 0 auto;
+    background: #e0e0e0;
+    height: 100%;
+}
+.header{
+	background: #101416;
+}
+
+.loginMain{
+	width: 500px;
+	border-radius: 20px;
+	background: white;
+	margin:3% auto;
+}
+.loginHeader{
+	height: 80px;
+	font: 24px/80px "微软雅黑" sans-serif;
+	padding-left: 38px;
+	color: white;
+	background: #1198bb;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+}
+.loginBody{
+	width: 400px;
+	margin: 40px auto;
+}
+.loginBody input,.loginBody button{
+	width: 400px;
+	height: 60px;
+	color: #aaa;
+	font: 18px/60px "微软雅黑" sans-serif;
+	border-radius: 10px;
+	border: 2px solid #aaa;
+	outline: none;
+	padding-left:20px;
+	margin-bottom: 30px;
+}
+/*.loginBody input:last-child{
+	width: 220px;
+}*/
+.loginMain .loginBody .yanzheng{
+	width: 220px;
+}
+.loginBody img{
+	vertical-align: top;
+	float: right;
+}
+.loginBody form button{
+	height: 80px;
+	border: none;
+	background: #1198bb;
+	color: white;
+	font: 24px/80px "微软雅黑" sans-serif;
+	padding-left: 0;
+}
+
+/*后台主页*/
+a{
+	color: white;
+}
+.userInfo{
+	float: right;
+	font-size: 16px;
+	line-height: 84px;
+	color: white;
+}
+.userInfo input,.userInfo button{
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	background: transparent;
+	margin: 0 60px 0 30px;
+}
+.main{
+	height: 86.9%;
+}
+.containLeft{
+	width: 300px;
+	height: 100%;
+	background: #1198bb;
+}
+.navContain li{
+	width: 100%;
+	display: inline-block;
+	color: #474747;
+	line-height: 48px;
+	padding-left: 40px;
+	-webkit-transition:background 0.3s linear;
+    -moz-transition:background 0.3s linear;
+    -ms-transition:background 0.3s linear;
+    -o-transition:background 0.3s linear;
+    transition:background 0.3s linear;
+}
+.navContain li:hover{
+	background-color: #30a3c4;
+}
+.navContain>li:last-child{
+	margin-bottom: 40px;
+}
+.navSlide{
+}
+.navSlide li{
+	color: #474747;
+	text-align:left; 
+	line-height: 48px;
+	padding-left: 2em; 
+}
+/*.navSlide li:hover{
+	text-indent: 32px;
+}*/
+.on{
+	background-color: #30a3c4;
+}
+.hide{
+	display: none;
+}
+
