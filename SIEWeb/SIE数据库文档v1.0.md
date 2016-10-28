@@ -14,7 +14,7 @@
 |-----|-----|-----|-----|
 |id|int|×|自增值，作为唯一标识的主键|
 |title|nvarchar(100)|×|页面的标题|
-|body|text|×|页面的主体部分，使用ueditor存储|
+|body|nvarchar(max)|×|页面的主体部分，使用ueditor存储|
 |createtime|datetime|×|创建时间，创建以后不再更改|
 |updatetime|datetime|×|最后一次更新时间|
 |belong |int|×|所属模块|
@@ -24,7 +24,7 @@
 |-----|-----|-----|-----|
 |id|int|×|自增值，唯一标识。主键|
 |title|nvarchar(50)|×|新闻标题|
-|body|text|×|新闻的主体部分，使用ueditor编辑|
+|body|nvarchar(max)|×|新闻的主体部分，使用ueditor编辑|
 |createtime|datetime|×|创建时间，创建以后不再更改|
 |updatetime|datetime|×|最后一次更新时间|
 |newclass|int|×|新闻的类别。|
@@ -36,7 +36,7 @@
 |tname|nvarchar(50)|×|教师姓名|
 |phone|nvarchar(100)|×|教师办公电话，可填多个。|
 |title|nvarchar(10)|×|教师职务|
-|body|text|×|教师详细页。使用ueditor编辑|
+|body|nvarchar(max)|×|教师详细页。使用ueditor编辑|
 |updatetime|datetime|×|最后一次更新时间|
 |createtime|datetime|×|创建时间，创建之后不能更改|
 |place|nvarchar(50)|×|教师办公地点|
@@ -48,7 +48,6 @@
 |-----|-----|-----|-----|
 |id|int|×|自增值，唯一标识。主键|
 |account|nvarchar(50)|×|管理员用户名|
-|password|nvarchar(50)|×|管理员密码|
+|password|nvarchar(max)|×|管理员密码|
 |createtime|datetime|×|创建时间，一旦创建不能修改|
 |updatetime|datetime|×|最后一次修改时间|
-|nikename|nvarchar(50)|×|管理员昵称|

@@ -1,0 +1,177 @@
+a{
+	color: #474747;
+}
+.containAbout{
+	width:1190px;
+	margin: 0 auto;
+	/*height: 800px;*/
+}
+.containLeft{
+	width: 300px;
+	/*height: 600px;*/
+	background: #f2f2f2;
+}
+.containLeft h3{
+	color: #474747;
+	font-size: 28px;
+	text-align:center; 
+	padding: 60px 0 ;
+}
+.navContain li{
+	width: 100%;
+	display: inline-block;
+	color: #474747;
+	text-align:center; 
+	height: 48px;
+	line-height: 48px;
+	-webkit-transition:background 0.3s linear;
+    -moz-transition:background 0.3s linear;
+    -ms-transition:background 0.3s linear;
+    -o-transition:background 0.3s linear;
+    transition:background 0.3s linear;
+}
+.navContain li:hover{
+	background-color: white;
+}
+.navContain>li:last-child{
+	margin-bottom: 40px;
+}
+.navSlide{
+	display: inline-block;
+}
+.navSlide a{
+	color: #474747;
+}
+.navSlide li{
+	color: #474747;
+	text-align:left; 
+	height: 48px;
+	line-height: 48px;
+	padding-left: 150px; 
+}
+.on{
+	background: url(../images/bluebar.png) no-repeat;
+	background-color: white;
+}
+.hide{
+	display: none;
+}
+.indexMainBanner{
+	margin-bottom:20px;
+}
+.containRight{
+	padding: 20px;
+	width: 890px;
+}
+.containRight,.containLeft{
+	float:left;
+	margin-bottom:20px;
+}
+.clearFloat{
+	clear:both;
+}
+.containRight h1:first-child{
+	border-bottom: #c2c2c2 1px dotted;
+	padding-bottom: 15px;
+	font-size: 18px;
+	font-family:'微软雅黑';
+}
+.containRight .alignCenter{
+	text-align:center;
+}
+.FAQFormArea>div>.FAQFormLeft,.FAQFormArea>div>.FAQFormRight{
+	float:left;
+}
+
+/*这里是表单域的宽度定义*/
+.FAQFormLeft{
+	width:30%;
+	text-align:center;
+	padding:10px 0px;
+}
+.FAQFormRight{
+	width: 70%;
+	padding:10px 0px;
+}                       
+.FAQFormRight *{        
+	width:50%;
+}
+
+
+.FAQTitle{
+	width:32%;
+	float:left;
+	text-align:left;
+}
+.FAQName{
+	width:32%;
+	float:left;
+	text-align:center;
+}
+.FAQTime{
+	width:32%;
+	float:left;
+	text-align:right;
+}
+.FAQContent{
+	margin-left:4px;
+	text-indent:2em;
+	line-height: 1.5;
+}
+.FAQList li>div{
+	padding:10px 4px;
+}
+.FAQList{
+	width: 80%;
+	margin: auto;
+}
+.FAQBrief{
+	background-color:#f7f7f7;
+}
+.FAQRepeat{
+	line-height: 1.5;
+	background-color:#f7f7f7;
+}
+.FAQRepeatWord{
+	color:#FF0000;
+}
+.FAQList li{
+	padding:10px 0px;
+}
+
+.leaderTable tr td:first-child{
+	width:11%;
+}
+.leaderTable tr td:first-child+td{
+	width:9%;
+}
+.leaderTable tr td:first-child+td+td{
+	width:16%;
+}
+.leaderTable tr td:first-child+td+td+td{
+	width:19%;
+}
+.leaderTable tr td:first-child+td+td+td+td{
+	width:20%;
+}
+.leaderTable tr td:first-child+td+td+td+td+td{
+	width:23%;
+}
+.leaderTable td{
+	border:inset black 1.0pt;
+}
+.leaderTable tr td p{
+	margin-left:0cm;text-align:center;
+}
+.leaderTable tr td p span{
+	font-size:14px;
+	font-family:'宋体';
+}
+/*如果不合适请直接删掉*/
+
+
+/*.containRight *{
+	margin:auto;
+	text-align:center;
+}*/
+/*被封印的css*/
