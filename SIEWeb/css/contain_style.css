@@ -60,8 +60,9 @@ a{
 	margin-bottom:20px;
 }
 .containRight{
-	padding: 20px;
+	padding: 60px;
 	width: 890px;
+    line-height:26px;
 }
 .containRight,.containLeft{
 	float:left;
@@ -78,6 +79,7 @@ a{
 }
 .containRight .alignCenter{
 	text-align:center;
+    display:block;
 }
 .FAQFormArea>div>.FAQFormLeft,.FAQFormArea>div>.FAQFormRight{
 	float:left;
@@ -169,9 +171,11 @@ a{
 }
 /*如果不合适请直接删掉*/
 
-
-/*.containRight *{
+/*
+.containRight *{
 	margin:auto;
 	text-align:center;
+}
+.containRight {
+    text-align:center;
 }*/
-/*被封印的css*/

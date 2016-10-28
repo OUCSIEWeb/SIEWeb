@@ -39,6 +39,7 @@
                 </div>
             </div>
             <div class="containLeft" runat="server" >
+
                 <h3>信息导航</h3>
                 <ul class="navContain" id="navContain">
                     <li><a href="newslist.aspx?classid==0">新闻速递</a></li>
@@ -50,14 +51,14 @@
             <div class="containRight">
                 <asp:Repeater runat="server" ID="Rpt">
                     <ItemTemplate>
-                        <%#Eval("title")%>
-                        <hr />
-                        <%#Eval("updatetime")%><br />
+                       <h1 class="alignCenter"> <%#Eval("title")%></h1>
+                       <span class="alignCenter"><%#Eval("updatetime")%></span><br /><br />
                         <%#Eval("body") %>
                     </ItemTemplate>
                 </asp:Repeater>
             </div>
             <div class="clearFloat"></div>
         </div>
+
 </asp:Content>
 
