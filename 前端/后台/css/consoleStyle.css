@@ -106,6 +106,7 @@ a{
 	height: 86.9%;
 }
 .containLeft{
+	display: inline-block;
 	width: 300px;
 	height: 100%;
 	background: #1198bb;
@@ -146,3 +147,11 @@ a{
 	display: none;
 }
 
+.containRight{
+	display: inline-block;
+	vertical-align: top;
+}
+.rightBody td{
+	text-align: center;
+	padding: 5px;
+}
