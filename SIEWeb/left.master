@@ -38,21 +38,85 @@
                     </a>
                 </div>
             </div>
-            <div class="containLeft" runat="server" visible="false">
+            <div class="containLeft" id="Div0" runat="server" visible="false">
                 <h3>关于我们</h3>
                 <ul class="navContain" id="navContain">
-                    <li class="on"><a href="">学校简介</a></li>
-                    <li><a href="">学院简介</a></li>
-                    <li><a href="">机构设置</a></li>
-                    <ul class="navSlide">
-                        <li><a href="#">学院办公室</a></li>
-                        <li><a href="#">招生工作部</a></li>
-                        <li><a href="#">教学工作部</a></li>
-                        <li><a href="#">学生事务部</a></li>
-                        <li><a href="#">国际合作办学部</a></li>
-                    </ul>
-                    <li><a href="">现任领导</a></li>
-                    <li><a href="">城市简介</a></li>
+                    <li><a href="pageShow.aspx?pid=1">学校简介</a></li>
+                    <li><a href="pageShow.aspx?pid=2">学院简介</a></li>
+                    <li><a href="pageShow.aspx?pid=3">机构设置</a></li>
+                    <li><a href="pageShow.aspx?pid=4">学院办公室</a></li>
+                    <li><a href="pageShow.aspx?pid=5">学生事务办公室</a></li>
+                    <li><a href="pageShow.aspx?pid=6">招生办公室</a></li>
+                    <li><a href="pageShow.aspx?pid=7">签证中心</a></li>
+                    <li><a href="pageShow.aspx?pid=8">汉语国际教育系</a></li>
+                    <li><a href="pageShow.aspx?pid=9">城市简介</a></li>
+                    <li><a href="teachers.aspx">院领导</a></li>
+                </ul>
+            </div>
+
+            <div class="containLeft" id="Div1" runat="server" visible="false">
+                <h3>入学申请</h3>
+                <ul class="navContain" id="navContain">
+                    <li><a href="pageShow.aspx?pid=11">入学条件</a></li>
+                    <li><a href="pageShow.aspx?pid=12">申请流程</a></li>
+                    <li><a href="pageShow.aspx?pid=13">表格下载</a></li>
+                    <li><a href="pageShow.aspx?pid=14">招生简章</a></li>
+                    <li><a href="pageShow.aspx?pid=15">在线申请</a></li>
+                    <li><a href="pageShow.aspx?pid=16">报到流程</a></li>
+                    <li><a href="pageShow.aspx?pid=17">费用说明</a></li>
+                </ul>
+            </div>
+
+            <div class="containLeft" id="Div2" runat="server" visible="false">
+                <h3>专业学习</h3>
+                <ul class="navContain" id="navContain">
+                    <li><a href="pageShow.aspx?pid=18">博士专业</a></li>
+                    <li><a href="pageShow.aspx?pid=19">硕士专业</a></li>
+                    <li><a href="pageShow.aspx?pid=20">本科专业</a></li>
+                    <li><a href="pageShow.aspx?pid=21">英文授课专业</a></li>
+                    <li><a href="pageShow.aspx?pid=22">预科教育</a></li>
+                    <li><a href="pageShow.aspx?pid=23">汉语言学习</a></li>
+                    <li><a href="pageShow.aspx?pid=24">导师介绍</a></li>
+                    <li><a href="pageShow.aspx?pid=25">学位认证</a></li>
+                    <li><a href="pageShow.aspx?pid=26">课程安排</a></li>
+                </ul>
+            </div>
+
+            <div class="containLeft" id="Div3" runat="server" visible="false">
+                <h3>HSK</h3>
+                <ul class="navContain" id="navContain">
+                    <li><a href="pageShow.aspx?pid=27">考点介绍</a></li>
+                    <li><a href="pageShow.aspx?pid=28">报名考试信息</a></li>
+                </ul>
+            </div>
+
+            <div class="containLeft" id="Div4" runat="server" visible="false">
+                <h3>奖学金</h3>
+                <ul class="navContain" id="navContain">
+                </ul>
+            </div>
+
+            <div class="containLeft" id="Div5" runat="server" visible="false">
+                <h3>生活指南</h3>
+                <ul class="navContain" id="navContain">
+                    <li><a href="pageShow.aspx?pid=30">留学生手册</a></li>
+                    <li><a href="pageShow.aspx?pid=31">学校校历</a></li>
+                    <li><a href="pageShow.aspx?pid=32">证照办理</a></li>
+                    <li><a href="pageShow.aspx?pid=33">校园设施</a></li>
+                    <li><a href="pageShow.aspx?pid=34">公寓住宿</a></li>
+                    <li><a href="pageShow.aspx?pid=35">学生社团</a></li>
+                    <li><a href="pageShow.aspx?pid=36">实践基地</a></li>
+                    <li><a href="pageShow.aspx?pid=37">就业信息</a></li>
+                    <li><a href="pageShow.aspx?pid=38">生活提示</a></li>
+                    <li><a href="pageShow.aspx?pid=39">安全提示</a></li>
+                    <li><a href="pageShow.aspx?pid=40">医疗保险</a></li>
+                    <li><a href="pageShow.aspx?pid=41">常用下载</a></li>
+                </ul>
+            </div>
+
+            <div class="containLeft" id="Div6" runat="server" visible="false">
+                <h3>信息公开</h3>
+                <ul class="navContain" id="navContain">
                 </ul>
             </div>
 

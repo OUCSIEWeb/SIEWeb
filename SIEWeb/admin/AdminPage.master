@@ -31,65 +31,65 @@
                         <li><a href="">关于我们</a>
                             <ul class="hide">
                                 <li><a href="editorPage.aspx?pid=1">学校简介</a></li>
-                                <li><a href="#">学院简介</a></li>
-                                <li><a href="#">机构设置</a></li>
-                                <li><a href="#">学院办公室</a></li>
-                                <li><a href="#">学生事务办公室</a></li>
-                                <li><a href="#">招生办公室</a></li>
-                                <li><a href="#">签证中心</a></li>
-                                <li><a href="#">汉语国际教育系</a></li>
-                                <li><a href="#">城市简介</a></li>
+                                <li><a href="editorPage.aspx?pid=2">学院简介</a></li>
+                                <li><a href="editorPage.aspx?pid=3">机构设置</a></li>
+                                <li><a href="editorPage.aspx?pid=4">学院办公室</a></li>
+                                <li><a href="editorPage.aspx?pid=5">学生事务办公室</a></li>
+                                <li><a href="editorPage.aspx?pid=6">招生办公室</a></li>
+                                <li><a href="editorPage.aspx?pid=7">签证中心</a></li>
+                                <li><a href="editorPage.aspx?pid=8">汉语国际教育系</a></li>
+                                <li><a href="editorPage.aspx?pid=9">城市简介</a></li>
                                 <li><a href="teacherslist.aspx">院领导</a></li>
                             </ul>
                         </li>
                         <li><a href="newslist.aspx">新闻公告</a></li>
-                        <li><a href="">入学申请</a></li>
+                        <li><a href="">入学申请</a>
                             <ul class="hide">
-                                <li><a href="#">入学条件</a></li>
-                                <li><a href="#">申请流程</a></li>
-                                <li><a href="#">表格下载</a></li>
-                                <li><a href="#">招生简章</a></li>
-                                <li><a href="#">在线申请</a></li>
-                                <li><a href="#">报到流程</a></li>
-                                <li><a href="#">费用说明</a></li>
-                            </ul>
+                                <li><a href="editorPage.aspx?pid=11">入学条件</a></li>
+                                <li><a href="editorPage.aspx?pid=12">申请流程</a></li>
+                                <li><a href="editorPage.aspx?pid=13">表格下载</a></li>
+                                <li><a href="editorPage.aspx?pid=14">招生简章</a></li>
+                                <li><a href="editorPage.aspx?pid=15">在线申请</a></li>
+                                <li><a href="editorPage.aspx?pid=16">报到流程</a></li>
+                                <li><a href="editorPage.aspx?pid=17">费用说明</a></li>
+                            </ul></li>
                         <li><a href="">专业学习</a>
                             <ul class="hide">
-                                <li><a href="#">博士专业</a></li>
-                                <li><a href="#">硕士专业</a></li>
-                                <li><a href="#">本科专业</a></li>
-                                <li><a href="#">英文授课专业</a></li>
-                                <li><a href="#">预科教育</a></li>
-                                <li><a href="#">汉语言学习</a></li>
-                                <li><a href="#">导师介绍</a></li>
-                                <li><a href="#">学位认证</a></li>
-                                <li><a href="#">课程安排</a></li>
+                                <li><a href="editorPage.aspx?pid=18">博士专业</a></li>
+                                <li><a href="editorPage.aspx?pid=19">硕士专业</a></li>
+                                <li><a href="editorPage.aspx?pid=20">本科专业</a></li>
+                                <li><a href="editorPage.aspx?pid=21">英文授课专业</a></li>
+                                <li><a href="editorPage.aspx?pid=22">预科教育</a></li>
+                                <li><a href="editorPage.aspx?pid=23">汉语言学习</a></li>
+                                <li><a href="editorPage.aspx?pid=24">导师介绍</a></li>
+                                <li><a href="editorPage.aspx?pid=25">学位认证</a></li>
+                                <li><a href="editorPage.aspx?pid=26">课程安排</a></li>
                             </ul>
                         </li>
                         <li><a href="">HSK</a>
                             <ul class="hide">
-                                <li><a href="#">考点介绍</a></li>
-                                <li><a href="#">报名考试信息</a></li>
+                                <li><a href="editorPage.aspx?pid=27">考点介绍</a></li>
+                                <li><a href="editorPage.aspx?pid=28">报名考试信息</a></li>
                             </ul>
                         </li>
                         <li><a href="">奖学金</a></li>
                         <li><a href="">生活指南</a>
                             <ul class="hide">
-                                <li><a href="#">留学生手册</a></li>
-                                <li><a href="#">学校校历</a></li>
-                                <li><a href="#">证照办理</a></li>
-                                <li><a href="#">校园设施</a></li>
-                                <li><a href="#">公寓住宿</a></li>
-                                <li><a href="#">学生社团</a></li>
-                                <li><a href="#">实践基地</a></li>
-                                <li><a href="#">就业信息</a></li>
-                                <li><a href="#">生活提示</a></li>
-                                <li><a href="#">安全提示</a></li>
-                                <li><a href="#">医疗保险</a></li>
-                                <li><a href="#">常用下载</a></li>
+                                <li><a href="editorPage.aspx?pid=30">留学生手册</a></li>
+                                <li><a href="editorPage.aspx?pid=31">学校校历</a></li>
+                                <li><a href="editorPage.aspx?pid=32">证照办理</a></li>
+                                <li><a href="editorPage.aspx?pid=33">校园设施</a></li>
+                                <li><a href="editorPage.aspx?pid=34">公寓住宿</a></li>
+                                <li><a href="editorPage.aspx?pid=35">学生社团</a></li>
+                                <li><a href="editorPage.aspx?pid=36">实践基地</a></li>
+                                <li><a href="editorPage.aspx?pid=37">就业信息</a></li>
+                                <li><a href="editorPage.aspx?pid=38">生活提示</a></li>
+                                <li><a href="editorPage.aspx?pid=39">安全提示</a></li>
+                                <li><a href="editorPage.aspx?pid=40">医疗保险</a></li>
+                                <li><a href="editorPage.aspx?pid=41">常用下载</a></li>
                             </ul>
                         </li>
-                        <li><a href="">信息公开</a></li>
+                        <li><a href="editorPage.aspx?pid=42">信息公开</a></li>
                         <li><a href="">联系我们</a></li>
                     </ul>
                 </div>
