@@ -31,7 +31,7 @@
                 <li class="navBlock"><a href="index.aspx">首页</a>
                 </li>
                 <li class="navBlock"><a href="">关于我们</a>
-                    <ul class="navSlideDown">
+                    <ul class="navSlideDown" style="display: none;">
                         <li><a href="pageShow.aspx?pid=1">学校简介</a></li>
                         <li><a href="pageShow.aspx?pid=2">学院简介</a></li>
                         <li><a href="pageShow.aspx?pid=3">机构设置</a></li>
@@ -45,7 +45,7 @@
                     </ul>
                 </li>
                 <li class="navBlock"><a href="">入学申请</a>
-                    <ul class="navSlideDown">
+                    <ul class="navSlideDown" style="display: none;">
                         <li><a href="pageShow.aspx?pid=11">入学条件</a></li>
                         <li><a href="pageShow.aspx?pid=12">申请流程</a></li>
                         <li><a href="pageShow.aspx?pid=13">表格下载</a></li>
@@ -56,7 +56,7 @@
                     </ul>
                 </li>
                 <li class="navBlock"><a href="">专业学习</a>
-                    <ul class="navSlideDown">
+                    <ul class="navSlideDown" style="display: none;">
                         <li><a href="pageShow.aspx?pid=18">博士专业</a></li>
                         <li><a href="pageShow.aspx?pid=19">硕士专业</a></li>
                         <li><a href="pageShow.aspx?pid=20">本科专业</a></li>
@@ -69,7 +69,7 @@
                     </ul>
                 </li>
                 <li class="navBlock"><a href="">HSK</a>
-                    <ul class="navSlideDown">
+                    <ul class="navSlideDown" style="display: none;">
                         <li><a href="pageShow.aspx?pid=27">考点介绍</a></li>
                         <li><a href="pageShow.aspx?pid=28">报名考试信息</a></li>
                     </ul>
@@ -77,7 +77,7 @@
                 <li class="navBlock"><a href="pageShow.aspx?pid=29">奖学金</a>
                 </li>
                 <li class="navBlock"><a href="">生活指南</a>
-                    <ul class="navSlideDown">
+                    <ul class="navSlideDown" style="display: none;">
                         <li><a href="pageShow.aspx?pid=30">留学生手册</a></li>
                         <li><a href="pageShow.aspx?pid=31">学校校历</a></li>
                         <li><a href="pageShow.aspx?pid=32">证照办理</a></li>

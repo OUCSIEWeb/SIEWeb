@@ -82,6 +82,9 @@ div.clear{
 	width:1190px;
 	margin: 0 auto;
 }
+/*ul.navSlideDown{
+	display: none;
+}*/
 .indexHeader .indexHeaderNav ul li.navBlock{
 	float: left;	
 	height: 50px;
