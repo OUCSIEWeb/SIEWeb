@@ -1,6 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/indexMaster.master" AutoEventWireup="true" CodeFile="newslist.aspx.cs" Inherits="newslist" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <%--页面样式，标题在左时间在右--%>
+    <style>
+        .containRight a{
+            float:left;
+        }
+        .containRight{
+            text-align:right;
+        }
+        .containRight h1{
+            text-align:left;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
             <div class="containAbout">

@@ -21,10 +21,17 @@ public partial class index : System.Web.UI.Page
                           where it.newclass == 2
                           orderby it.updatetime 
                           descending select it;
-                Rptnews1.DataSource = se1.ToList();
+                var se3 = from it in db.news
+                          where it.newclass == 1
+                          orderby it.updatetime
+                          descending
+                          select it;
+                Rptnews1.DataSource = se1.Take(8).ToList();
                 Rptnews1.DataBind();
-                Rptnews2.DataSource = se2.ToList();
+                Rptnews2.DataSource = se2.Take(8).ToList();
                 Rptnews2.DataBind();
+                Repeater1.DataSource = se3.Take(8).ToList();
+                Repeater1.DataBind();
             }
         }
     }

@@ -12,94 +12,104 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-            
-        <form id="form1" class="container" runat="server">
-            <div class="header">
-                <img src="img/后台头部logo.jpg" alt="">
-                <div class="userInfo">
-                    
-                        <span class="username">
-                            <asp:Label runat="server" ID="LabName"></asp:Label></span>，您好！
-					<asp:Button runat="server" ID="BtnLogout" OnClick="BtnLogout_Click" Text="注销" />
-                   
-                </div>
-            </div>
-            <div class="main">
-                <div class="containLeft">
-                    <ul class="navContain" id="navContain">
-                        <li class="on"><a href="index.aspx">首页</a></li>
-                        <li><a href="">关于我们</a>
-                            <ul class="hide">
-                                <li><a href="editorPage.aspx?pid=1">学校简介</a></li>
-                                <li><a href="editorPage.aspx?pid=2">学院简介</a></li>
-                                <li><a href="editorPage.aspx?pid=3">机构设置</a></li>
-                                <li><a href="editorPage.aspx?pid=4">学院办公室</a></li>
-                                <li><a href="editorPage.aspx?pid=5">学生事务办公室</a></li>
-                                <li><a href="editorPage.aspx?pid=6">招生办公室</a></li>
-                                <li><a href="editorPage.aspx?pid=7">签证中心</a></li>
-                                <li><a href="editorPage.aspx?pid=8">汉语国际教育系</a></li>
-                                <li><a href="editorPage.aspx?pid=9">城市简介</a></li>
-                                <li><a href="teacherslist.aspx">院领导</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="newslist.aspx">新闻公告</a></li>
-                        <li><a href="">入学申请</a>
-                            <ul class="hide">
-                                <li><a href="editorPage.aspx?pid=11">入学条件</a></li>
-                                <li><a href="editorPage.aspx?pid=12">申请流程</a></li>
-                                <li><a href="editorPage.aspx?pid=13">表格下载</a></li>
-                                <li><a href="editorPage.aspx?pid=14">招生简章</a></li>
-                                <li><a href="editorPage.aspx?pid=15">在线申请</a></li>
-                                <li><a href="editorPage.aspx?pid=16">报到流程</a></li>
-                                <li><a href="editorPage.aspx?pid=17">费用说明</a></li>
-                            </ul></li>
-                        <li><a href="">专业学习</a>
-                            <ul class="hide">
-                                <li><a href="editorPage.aspx?pid=18">博士专业</a></li>
-                                <li><a href="editorPage.aspx?pid=19">硕士专业</a></li>
-                                <li><a href="editorPage.aspx?pid=20">本科专业</a></li>
-                                <li><a href="editorPage.aspx?pid=21">英文授课专业</a></li>
-                                <li><a href="editorPage.aspx?pid=22">预科教育</a></li>
-                                <li><a href="editorPage.aspx?pid=23">汉语言学习</a></li>
-                                <li><a href="editorPage.aspx?pid=24">导师介绍</a></li>
-                                <li><a href="editorPage.aspx?pid=25">学位认证</a></li>
-                                <li><a href="editorPage.aspx?pid=26">课程安排</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">HSK</a>
-                            <ul class="hide">
-                                <li><a href="editorPage.aspx?pid=27">考点介绍</a></li>
-                                <li><a href="editorPage.aspx?pid=28">报名考试信息</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">奖学金</a></li>
-                        <li><a href="">生活指南</a>
-                            <ul class="hide">
-                                <li><a href="editorPage.aspx?pid=30">留学生手册</a></li>
-                                <li><a href="editorPage.aspx?pid=31">学校校历</a></li>
-                                <li><a href="editorPage.aspx?pid=32">证照办理</a></li>
-                                <li><a href="editorPage.aspx?pid=33">校园设施</a></li>
-                                <li><a href="editorPage.aspx?pid=34">公寓住宿</a></li>
-                                <li><a href="editorPage.aspx?pid=35">学生社团</a></li>
-                                <li><a href="editorPage.aspx?pid=36">实践基地</a></li>
-                                <li><a href="editorPage.aspx?pid=37">就业信息</a></li>
-                                <li><a href="editorPage.aspx?pid=38">生活提示</a></li>
-                                <li><a href="editorPage.aspx?pid=39">安全提示</a></li>
-                                <li><a href="editorPage.aspx?pid=40">医疗保险</a></li>
-                                <li><a href="editorPage.aspx?pid=41">常用下载</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="editorPage.aspx?pid=42">信息公开</a></li>
-                        <li><a href="">联系我们</a></li>
-                    </ul>
-                </div>
-                            <div class="containRight" style="float:right;">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-             </div>
-            </div>
 
-            </form>
+    <form id="form1" class="container" runat="server">
+        <div class="header">
+            <img src="img/后台头部logo.jpg" alt="">
+            <div class="userInfo">
+
+                <span class="username">
+                    <asp:Label runat="server" ID="LabName"></asp:Label></span>，您好！
+					<asp:Button runat="server" ID="BtnLogout" OnClick="BtnLogout_Click" Text="注销" />
+
+            </div>
+        </div>
+        <div class="main">
+            <div class="containLeft">
+                <ul class="navContain" id="navContain">
+                    <li class="on"><a href="index.aspx">首页</a></li>
+                    <li><a href="">关于我们</a>
+                        <ul class="hide">
+                            <li><a href="editorPage.aspx?pid=54">学校简介</a></li>
+                            <li><a href="editorPage.aspx?pid=55">学院简介</a></li>
+                            <li><a href="editorPage.aspx?pid=56">机构设置</a></li>
+                            <li><a href="editorPage.aspx?pid=57">学院办公室</a></li>
+                            <li><a href="editorPage.aspx?pid=60">学生事务部</a></li>
+                            <li><a href="editorPage.aspx?pid=58">招生工作部</a></li>
+                            <li><a href="editorPage.aspx?pid=59">教学工作部</a></li>
+                            <li><a href="editorPage.aspx?pid=61">国际合作办学部</a></li>
+                            <li><a href="editorPage.aspx?pid=62">城市简介</a></li>
+                            <li><a href="teacherslist.aspx">院领导</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="newslist.aspx">新闻公告</a></li>
+                    <li><a href="">入学申请</a>
+                        <ul class="hide">
+                            <li><a href="editorPage.aspx?pid=63">入学条件</a></li>
+                            <li><a href="editorPage.aspx?pid=64">申请流程</a></li>
+                            <li><a href="editorPage.aspx?pid=65">招生简章</a></li>
+                            <li><a href="editorPage.aspx?pid=66">在线申请</a></li>
+                            <li><a href="editorPage.aspx?pid=67">报到流程</a></li>
+                            <li><a href="editorPage.aspx?pid=68">费用说明</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">专业学习</a>
+                        <ul class="hide">
+                            <li><a href="editorPage.aspx?pid=69">博士专业</a></li>
+                            <li><a href="editorPage.aspx?pid=70">硕士专业</a></li>
+                            <li><a href="editorPage.aspx?pid=71">本科专业</a></li>
+                            <li><a href="editorPage.aspx?pid=72">英文授课专业</a></li>
+                            <li><a href="editorPage.aspx?pid=73">汉语言学习</a></li>
+                            <li><a href="editorPage.aspx?pid=75">导师介绍</a></li>
+                            <li><a href="editorPage.aspx?pid=76">学位认证</a></li>
+                            <li><a href="editorPage.aspx?pid=74">课程安排</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">HSK</a>
+                        <ul class="hide">
+                            <li><a href="editorPage.aspx?pid=77">考点介绍</a></li>
+                            <li><a href="editorPage.aspx?pid=78">报名考试信息</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">奖学金</a>
+                        <ul class="hide">
+                            <li><a href="editorPage.aspx?pid=79">中国政府奖学金</a></li>
+                            <li><a href="editorPage.aspx?pid=80">中国政府海洋奖学金</a></li>
+                            <li><a href="editorPage.aspx?pid=81">孔子学院奖学金</a></li>
+                            <li><a href="editorPage.aspx?pid=82">校长奖学金</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">生活指南</a>
+                        <ul class="hide">
+                            <li><a href="editorPage.aspx?pid=83">留学生手册</a></li>
+                            <li><a href="editorPage.aspx?pid=84">学校校历</a></li>
+                            <li><a href="editorPage.aspx?pid=85">证照办理</a></li>
+                            <li><a href="editorPage.aspx?pid=86">校园设施</a></li>
+                            <li><a href="editorPage.aspx?pid=87">公寓住宿</a></li>
+                            <li><a href="editorPage.aspx?pid=88">学生社团</a></li>
+                            <li><a href="editorPage.aspx?pid=89">生活提示</a></li>
+                            <li><a href="editorPage.aspx?pid=90">安全提示</a></li>
+                            <li><a href="editorPage.aspx?pid=91">医疗保险</a></li>
+                            <li><a href="editorPage.aspx?pid=92">常用下载</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">规章制度</a>
+                        <ul class="hide">
+                            <li><a href="editorPage.aspx?pid=93">学院规章制度</a></li>
+                            <li><a href="editorPage.aspx?pid=94">学生规章制度</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="files.aspx">资料下载</a></li>
+                    <li><a href="editorPage.aspx?pid=95">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="containRight" style="float: right;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+    </form>
 
 </body>
 </html>

@@ -24,7 +24,7 @@
         <asp:ListItem Text="HSK" Value="4"></asp:ListItem>
         <asp:ListItem Text="奖学金" Value="5"></asp:ListItem>
         <asp:ListItem Text="生活指南" Value="6"></asp:ListItem>
-        <asp:ListItem Text="信息公开" Value="7"></asp:ListItem>
+        <asp:ListItem Text="规章制度" Value="7"></asp:ListItem>
         <asp:ListItem Text="联系我们" Value="8"></asp:ListItem>
 
     </asp:DropDownList>

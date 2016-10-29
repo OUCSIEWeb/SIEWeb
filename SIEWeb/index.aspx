@@ -41,13 +41,18 @@
 		<div class="indexMainInner clearfix">
 			<div class="indexMainLeft">
 				<div class="indexMainLeftTop clearfix">
-					<div class="indexMainTittle">新闻动态</div>
-					<div class="indexMainTittle">通知公告</div>
+					<div class="indexMainTittle indexMainTittleLeft indexMainTittleFirst mainThis">新闻动态</div>
+					<div class="indexMainTittle indexMainTittleLeft indexMainTittleSecond">通知公告</div>
 					<span class="indexMainMore"><a href="">更多></a></span>
 				</div>
 				<div class="border"></div>
-				<ul type="disc">
+				<ul class="news">
                     <asp:Repeater ID="Rptnews1" runat="server" >
+                        <ItemTemplate><li><i class="glyphicon glyphicon-chevron-right"></i><a href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a></li></ItemTemplate>
+                    </asp:Repeater> 
+				</ul>
+                <ul class="notice">
+                    <asp:Repeater ID="Repeater1" runat="server" >
                         <ItemTemplate><li><i class="glyphicon glyphicon-chevron-right"></i><a href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a></li></ItemTemplate>
                     </asp:Repeater> 
 				</ul>

@@ -27,4 +27,6 @@ public partial class SiewebEntities : DbContext
     public DbSet<news> news { get; set; }
     public DbSet<pages> pages { get; set; }
     public DbSet<teachers> teachers { get; set; }
+    public DbSet<files> files { get; set; }
+    public DbSet<faqs> faqs { get; set; }
 }

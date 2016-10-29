@@ -15,6 +15,28 @@
           <Property Name="createtime" Type="datetime" Nullable="false" />
           <Property Name="updatetime" Type="datetime" Nullable="false" />
         </EntityType>
+        <EntityType Name="faqs">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sname" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="title" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="body" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="createtime" Type="datetime" Nullable="false" />
+          <Property Name="updatetime" Type="datetime" Nullable="false" />
+          <Property Name="reply" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="state" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="files">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="filename" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="createtime" Type="datetime" Nullable="false" />
+        </EntityType>
         <EntityType Name="news">
           <Key>
             <PropertyRef Name="id" />
@@ -54,6 +76,8 @@
         </EntityType>
         <EntityContainer Name="SiewebModelStoreContainer">
           <EntitySet Name="admins" EntityType="Self.admins" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="faqs" EntityType="Self.faqs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="files" EntityType="Self.files" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="news" EntityType="Self.news" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="pages" EntityType="Self.pages" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="teachers" EntityType="Self.teachers" Schema="dbo" store:Type="Tables" />
@@ -114,7 +138,31 @@
           <EntitySet Name="news" EntityType="Self.news" />
           <EntitySet Name="pages" EntityType="Self.pages" />
           <EntitySet Name="teachers" EntityType="Self.teachers" />
+          <EntitySet Name="files" EntityType="SiewebModel.files" />
+          <EntitySet Name="faqs" EntityType="SiewebModel.faqs" />
         </EntityContainer>
+        <EntityType Name="files">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="filename" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="createtime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="faqs">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sname" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="title" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="body" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="updatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="reply" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="state" Type="Int32" Nullable="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -169,6 +217,30 @@
                 <ScalarProperty Name="place" ColumnName="place" />
                 <ScalarProperty Name="describe" ColumnName="describe" />
                 <ScalarProperty Name="email" ColumnName="email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="files">
+            <EntityTypeMapping TypeName="SiewebModel.files">
+              <MappingFragment StoreEntitySet="files">
+                <ScalarProperty Name="createtime" ColumnName="createtime" />
+                <ScalarProperty Name="filename" ColumnName="filename" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="faqs">
+            <EntityTypeMapping TypeName="SiewebModel.faqs">
+              <MappingFragment StoreEntitySet="faqs">
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="reply" ColumnName="reply" />
+                <ScalarProperty Name="updatetime" ColumnName="updatetime" />
+                <ScalarProperty Name="createtime" ColumnName="createtime" />
+                <ScalarProperty Name="body" ColumnName="body" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="sname" ColumnName="sname" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -19,6 +19,26 @@ public partial class admins
     public System.DateTime updatetime { get; set; }
 }
 
+public partial class faqs
+{
+    public int id { get; set; }
+    public string sname { get; set; }
+    public string title { get; set; }
+    public string body { get; set; }
+    public System.DateTime createtime { get; set; }
+    public System.DateTime updatetime { get; set; }
+    public string reply { get; set; }
+    public int state { get; set; }
+}
+
+public partial class files
+{
+    public int id { get; set; }
+    public string title { get; set; }
+    public string filename { get; set; }
+    public System.DateTime createtime { get; set; }
+}
+
 public partial class news
 {
     public int id { get; set; }
