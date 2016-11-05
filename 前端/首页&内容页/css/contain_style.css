@@ -13,10 +13,10 @@ a{
 	background: #f2f2f2;
 }
 .containLeft h3{
-	color: #474747;
-	font-size: 28px;
-	text-align:center; 
-	padding: 60px 0 ;
+	font-size: 36px;
+    color: #474747;
+    text-align: center;
+    padding: 30px 0;
 }
 .navContain li{
 	width: 100%;
@@ -73,9 +73,10 @@ a{
 }
 .containRight h1:first-child{
 	border-bottom: #c2c2c2 1px dotted;
-	padding-bottom: 15px;
-	font-size: 18px;
 	font-family:'微软雅黑';
+	font-size: 36px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
 }
 .containRight .alignCenter{
 	text-align:center;
