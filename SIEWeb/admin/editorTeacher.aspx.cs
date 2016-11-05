@@ -49,7 +49,6 @@ public partial class admin_addPage : System.Web.UI.Page
                 tea.phone = TxtPhone.Text.Replace("\n", "<br/>");
                 tea.title = TxtTitle.Text.Trim();
                 tea.body = str;
-
                 tea.updatetime = DateTime.Now;
                 tea.describe = TxtDes.Text;
                 tea.email = TxtEmail.Text.Trim();

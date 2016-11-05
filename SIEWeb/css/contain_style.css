@@ -1,5 +1,6 @@
-﻿a{
+a{
 	color: #474747;
+	display: block;
 }
 .containAbout{
 	width:1190px;
@@ -12,13 +13,10 @@
 	background: #f2f2f2;
 }
 .containLeft h3{
-	color: #474747;
-	font-size: 28px;
-	text-align:center; 
-	padding: 60px 0 ;
-}
-.navContain li a{
-        display:block;
+	font-size: 36px;
+    color: #474747;
+    text-align: center;
+    padding: 30px 0;
 }
 .navContain li{
 	width: 100%;
@@ -63,9 +61,8 @@
 	margin-bottom:20px;
 }
 .containRight{
-	padding: 60px;
+	padding: 20px;
 	width: 890px;
-    line-height:26px;
 }
 .containRight,.containLeft{
 	float:left;
@@ -76,13 +73,13 @@
 }
 .containRight h1:first-child{
 	border-bottom: #c2c2c2 1px dotted;
-	padding-bottom: 15px;
-	font-size: 18px;
 	font-family:'微软雅黑';
+	font-size: 36px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
 }
 .containRight .alignCenter{
 	text-align:center;
-    display:block;
 }
 .FAQFormArea>div>.FAQFormLeft,.FAQFormArea>div>.FAQFormRight{
 	float:left;
@@ -174,11 +171,9 @@
 }
 /*如果不合适请直接删掉*/
 
-/*
-.containRight *{
+
+/*.containRight *{
 	margin:auto;
 	text-align:center;
-}
-.containRight {
-    text-align:center;
 }*/
+/*被封印的css*/

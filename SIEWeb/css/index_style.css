@@ -37,24 +37,32 @@ div.clear{
 .indexHeader{
 	width: 100%;
 	color: #fff;
-	background: #1198bb;
+}
+.indexHeader .indexHeaderDadTittle{
+	width: 100%;
+	background-image: url(../images/head_background.jpg);
 }
 .indexHeader .indexHeaderTittle{
 	margin: 0 auto;
 	width:1190px;
 	height: 150px;
 }
+.indexHeader .indexHeaderDadNav{
+	width: 100%;
+	background-image: url(../images/nav_background.jpg);
+}
 .indexHeader .indexHeaderNav{
 	margin: 0 auto;
 	width: 100%;
 	height: 50px;
-	background: #e6e6e6;
 }
 .indexHeader .indexHeaderTittle .thisTittle{
-	background-image: url(../images/head.jpg);
 	width: 100%;
 	height: 100%;
 } 
+.thisTittle img{
+	margin: 30px;
+}
 .indexHeader .indexHeaderTittle .search{
 	float: right;
 	width: 26%;
@@ -82,16 +90,18 @@ div.clear{
 	width:1190px;
 	margin: 0 auto;
 }
+/*ul.navSlideDown{
+	display: none;
+}*/
 .indexHeader .indexHeaderNav ul li.navBlock{
 	float: left;	
 	height: 50px;
 	line-height: 50px;
-	width: 10%;
+	width: 9%;
 	position: relative;
 }
 .indexHeader .indexHeaderNav ul li.navBlock:hover{
-	color: white;
-	background: #1198bb;
+	background: #3ca7e1;
 }
 .indexHeader .indexHeaderNav ul li.navBlock a{
 	display: block;
@@ -99,124 +109,194 @@ div.clear{
 	width: 100%;
 	height: 50px;
 	line-height: 50px;
-	font-size: 14px;
+	font-size: 16px;
 	color: #404040;
 }
 .indexHeader .indexHeaderNav ul li.navBlock a:hover{
 	color: white;
 }
 .indexHeader .indexHeaderNav ul.navSlideDown{
-	width: 100%;
+	width: 160px;
 	z-index: 9999;
 	position: absolute;
+	left: -28px;
 }
 .indexHeader .indexHeaderNav ul.navSlideDown li{
 	width: 100%;
 	height: 50px;
-	background: #e6e6e6;
+	background: #3ca7e1;
+	opacity: 0.75;
+	border-bottom: solid 1px #d8f3ff;
+}
+.indexHeader .indexHeaderNav ul.navSlideDown li:last-child{
+	border-bottom: 0px;
 }
 .indexHeader .indexHeaderNav ul.navSlideDown li:hover{
-	background: #f2f2f2;
+	background: #3ca7e1;
+	opacity: 0.9;
 }
 .indexHeader .indexHeaderNav ul.navSlideDown li a{
-	color: #aaa;
+	color: white;
 	display: block;
 	width: 100%;
 	font-size: 14px;
 	height: 50px;
 	text-align: center;
-}
-.indexHeader .indexHeaderNav ul.navSlideDown li a:hover{
-	color: #404040;
 }
 .indexMain{
 	width: 100%;
 	z-index: 1;
 }
 .indexMain .indexMainBanner{
-	width:1190px;
+	width: 1190px;
 	margin: 0 auto;
 	height: 400px;
 }
 /*.indexMain .indexMainBanner .item img{
 	height: 100%;
 }*/
+
+/*.indexMain .indexMainBanner a{
+	background-image: none;
+}
+*/
+.indexMain .indexMainBanner a span.glyphicon{
+	font-size: 40px !important;
+}
+
 .indexMain .indexMainInner{
 	width:1190px;
 	margin: 0 auto;
 	margin-top: 20px;
 }
-.indexMain .indexMainInner .indexMainLeft{
+
+.indexMain .indexMainInner .indexMainInnerChild{
+	width: 380px;
 	float: left;
-	width: 58%;
+	margin-left: 25px;
+
 }
-.indexMain .indexMainInner .indexMainRight{
-	float: right;
-	width: 38%;
+
+.indexMain .indexMainInner .indexMainInnerChild:first-child{
+	margin-left: 0px;
 }
-.indexMain .indexMainInner .indexMainTittle{
-	cursor: pointer;
-	width: 120px;
-	height: 50px;
-	line-height: 50px;
-	font-size: 18px;
-	text-align: center;
-	float: left;
-}	
-.indexMain .indexMainInner .indexMainMore{
+
+.indexMainInnerChild .childTittle h3{
+	font-size: 24px;
+	color: #404040;
 	display: block;
+	float: left;
+	margin: 0;
 	height: 50px;
 	line-height: 50px;
-	text-align: center;
-	font-size: 14px;
-	float: right;
-	color: #aaa;	
 }
-.indexMain .indexMainInner .border{
+
+.indexMainInnerChild .childTittle span{
+	color: #aaa;
+	font-size: 16px;
+	display: block;
+	float: left;
+	margin-left: 20px;
+	height: 32px;
+	line-height: 32px;
+	position: relative;
+	top: 13px;
+}
+
+.indexMainInnerChild .childInner{
+	margin-bottom: 60px;
+}
+
+.indexMainInnerChild .childTittle a{
+	display: block;
+	float: right;
+	color: #aaa;
+	position: relative;
+	top: 18px;
+	right: 5px;
+}
+
+.indexMainInnerChild .childTittle a:hover{
+	color: #3ca7e1;
+}
+
+.indexMainInnerChild .childBorder{
 	width: 100%;
 	height: 4px;
-	background: #1198bb;
+	background-color: #3CA7E1;
 }
-.indexMain .indexMainInner ul{
-	margin: 20px 0;
-	padding-left: 0px;
-	list-style-type: disc;
+
+.indexMainInnerChild .childInner a{
+	display: block;
 }
-.indexMain .indexMainInner ul li{
+
+.indexMainInnerChild .childInner a.picture{
+	width: 100%;
+	height: 140px;
+	overflow: hidden;
+	margin: 10px 0;
+}
+
+.indexMainInnerChild .childInner a.picture img{
+	width: 100%;
+}
+
+.indexMainInnerChild .childInner ul li a{
+	width: 85%;
+	font-size: 16px;
+	color: #404040;
 	white-space: nowrap; 
     text-overflow: ellipsis; 
-    overflow: hidden; 
-    font-size: 14px;
-    height: 24px;
-    line-height: 24px;
-    color: 	#404040;
+    overflow: hidden;
     margin-top: 5px;
+    float: left;
 }
-.indexMain .indexMainInner ul li a{
-	color: #404040;
+
+.indexMainInnerChild .childInner ul li span{
+	display: block;
+	float: right;
+	color: #aaa;
+	text-align: right;
+	width: 15%;
+	font-size: 14px;
+	position: relative;
+	top: 8px;
 }
-.indexMain .indexMainInner ul li a:hover{
-	color: #337ab7;
+
+.indexMainInnerChild .childInner ul li a:hover{
+	color: #3CA7E1;
 }
+
+.indexMainInnerChild .childInner ul li a:before{
+	content: url(../images/point.png);
+}
+
+.childLittle {
+	margin-bottom: 30px;
+}
+
+.childLittle li a{
+	font-size: 14px;
+	color: #2980b9;
+}
+
+.childLittle li span{
+	color: #ccc;
+}
+
+/*footer*/
 .indexFooter{
 	width: 100%;
-	height: 120px;
-	background: #1198bb;
-	color: white;
+	height: 80px;
+	background: url(../images/footer_background.jpg);
 	font-size: 14px;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 .indexFooter li{
 	text-align: center;
-	margin-top: 10px;
-}
-.mainThisFirst{
-	background: #1198bb;
 	color: white;
-}
-.mainThis{
-	background: #1198bb;
-	color: white;
+	opacity: 0.7;
+	margin-top: 5px;
 }
 /*@media screen and (max-width: 1500px){
 	.indexHeader .indexHeaderTittle{

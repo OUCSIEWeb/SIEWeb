@@ -37,6 +37,8 @@ public partial class files
     public string title { get; set; }
     public string filename { get; set; }
     public System.DateTime createtime { get; set; }
+    public int lang { get; set; }
+    public int viewlevel { get; set; }
 }
 
 public partial class news
@@ -47,6 +49,10 @@ public partial class news
     public System.DateTime updatetime { get; set; }
     public System.DateTime createtime { get; set; }
     public int newclass { get; set; }
+    public int lang { get; set; }
+    public bool iftop { get; set; }
+    public string toppicture { get; set; }
+    public string listpicture { get; set; }
 }
 
 public partial class pages
@@ -57,6 +63,14 @@ public partial class pages
     public System.DateTime createtime { get; set; }
     public System.DateTime updatetime { get; set; }
     public int belong { get; set; }
+}
+
+public partial class pics
+{
+    public int id { get; set; }
+    public System.DateTime updatetime { get; set; }
+    public System.DateTime createtime { get; set; }
+    public string picname { get; set; }
 }
 
 public partial class teachers
@@ -71,4 +85,5 @@ public partial class teachers
     public string place { get; set; }
     public string describe { get; set; }
     public string email { get; set; }
+    public int lang { get; set; }
 }

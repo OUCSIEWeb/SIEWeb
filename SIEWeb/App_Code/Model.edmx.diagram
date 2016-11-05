@@ -11,6 +11,7 @@
         <EntityTypeShape EntityType="SiewebModel.teachers" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SiewebModel.files" Width="1.5" PointX="5.375" PointY="0.75" />
         <EntityTypeShape EntityType="SiewebModel.faqs" Width="1.5" PointX="5.375" PointY="3.75" />
+        <EntityTypeShape EntityType="SiewebModel.pics" Width="1.5" PointX="7.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

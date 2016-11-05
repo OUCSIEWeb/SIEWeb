@@ -29,4 +29,5 @@ public partial class SiewebEntities : DbContext
     public DbSet<teachers> teachers { get; set; }
     public DbSet<files> files { get; set; }
     public DbSet<faqs> faqs { get; set; }
+    public DbSet<pics> pics { get; set; }
 }
