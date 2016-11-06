@@ -23,9 +23,25 @@ public partial class index : System.Web.UI.Page
             temp = PBind(2);
             img3.Src = "." + temp.listpicture;
             a3.HRef = "newsshow.aspx?nid=" + temp.id.ToString();
-            BindTop();
+            bindTop1();
+            bindTop2();
            
         }
+    }
+
+    protected void bindTop1()
+    {
+        using (var db = new SiewebEntities())
+        {
+            var se = from it in db.pics
+                     select it;
+            //RptTop1.DataSource = se.ToList();
+            //RptTop1.DataBind();
+            imgtop1.ImageUrl ="admin/"+ se.ToList()[0].picname;
+            imgtop2.ImageUrl = "admin/" + se.ToList()[1].picname;
+            imgtop3.ImageUrl = "admin/" + se.ToList()[2].picname;
+        }
+    
     }
 
     protected void NDataBind(Repeater rp,int i)
@@ -42,7 +58,7 @@ public partial class index : System.Web.UI.Page
     }
 
 
-    protected void BindTop()
+    protected void bindTop2()
     {
         using (var db = new SiewebEntities())
         {
@@ -50,8 +66,6 @@ public partial class index : System.Web.UI.Page
                         where it.lang == 0 && it.toppicture!=""
                         orderby it.updatetime descending
                         select it;
-            RptTop1.DataSource = top.ToList().Take(3);
-            RptTop1.DataBind();
             RptTop2.DataSource = top.ToList().Take(3);
             RptTop2.DataBind();
         }

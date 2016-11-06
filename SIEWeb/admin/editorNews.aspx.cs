@@ -22,7 +22,6 @@ public partial class admin_addPage : System.Web.UI.Page
                     TxtTitle.Text = ne.title;
                     DdlSelect.SelectedValue = ne.newclass.ToString();
                     editor.InnerHtml = ne.body;
-                    IfTop.Checked = ne.iftop;
                 }
             }
             catch
@@ -96,7 +95,6 @@ public partial class admin_addPage : System.Web.UI.Page
                         return;
                     }
                 }
-                page.iftop = IfTop.Checked;
                 db.SaveChanges();
                 Response.Write("<script>alert('修改成功');window.location.href='newslist.aspx'</script>");
             }

@@ -102,6 +102,7 @@
                         </ul>
                     </li>
                     <li><a href="files.aspx">资料下载</a></li>
+                    <li><a href="editorTopPic.aspx">主页图片轮播</a></li>
                     <li><a href="editorPage.aspx?pid=95">联系我们</a></li>
                 </ul>
             </div>
