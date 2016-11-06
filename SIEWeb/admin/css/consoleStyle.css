@@ -1,8 +1,8 @@
 html{height: 100%;}
 body{height: 100%;}
 body,div,dl,dt,dd,ul,ol,li,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
-body,h1 { color:#555; font-family: "微软雅黑",Verdana, Arial, Helvetica, sans-serif; }
-h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; font-family: "微软雅黑",Verdana, Arial, Helvetica, sans-serif;}
+body,h1 { color:#555; font-family: "Microsoft YaHei"; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; font-family: "Microsoft YaHei";}
 address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
 a { text-decoration:none; }
 a:link{text-decoration: none;}
@@ -11,7 +11,7 @@ a:hover { text-decoration:none; }
 a:active { text-decoration:none !important; }
 img { border:none; }
 ol,ul,li { list-style:none; margin-bottom: 0;}
-input, textarea, select, button,li,span,p { font-family: "微软雅黑",Verdana,Helvetica,Arial,sans-serif; }
+input, textarea, select, button,li,span,p { font-family: "Microsoft YaHei"; }
 table { border-collapse:collapse; }
 html {overflow-y: scroll;} 
 *, *:before, *:after {
@@ -43,7 +43,7 @@ div.clear{
 }
 .loginHeader{
 	height: 80px;
-	font: 24px/80px "微软雅黑" sans-serif;
+	font: 24px/80px "Microsoft YaHei" ;
 	padding-left: 38px;
 	color: white;
 	background: #1198bb;
@@ -58,7 +58,7 @@ div.clear{
 	width: 400px;
 	height: 60px;
 	color: #aaa;
-	font: 18px/60px "微软雅黑" sans-serif;
+	font: 18px/60px "Microsoft YaHei" ;
 	border-radius: 10px;
 	border: 2px solid #aaa;
 	outline: none;
@@ -80,7 +80,7 @@ div.clear{
 	border: none;
 	background: #1198bb;
 	color: white;
-	font: 24px/80px "微软雅黑" sans-serif;
+	font: 24px/80px "Microsoft YaHei";
 	padding-left: 0;
 }
 .loginBody .doubi{
@@ -88,7 +88,7 @@ div.clear{
 	border: none;
 	background: #1198bb;
 	color: white;
-	font: 24px/80px "微软雅黑" sans-serif;
+	font: 24px/80px "Microsoft YaHei";
 	padding-left: 0;
 }
 

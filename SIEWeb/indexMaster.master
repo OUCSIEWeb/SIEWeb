@@ -34,7 +34,7 @@
                     <ul class="clearfix">
                         <li class="navBlock"><a href="index.aspx">首页</a>
                         </li>
-                        <li class="navBlock"><a href="">关于我们</a>
+                        <li class="navBlock"><a href="#">关于我们</a>
                             <ul class="navSlideDown" style="display: none;">
                                 <li><a href="pageShow.aspx?pid=54">学校简介</a></li>
                                 <li><a href="pageShow.aspx?pid=55">学院简介</a></li>
@@ -43,7 +43,7 @@
                                 <li><a href="teachers.aspx">现任领导</a></li>
                             </ul>
                         </li>
-                        <li class="navBlock"><a href="">入学申请</a>
+                        <li class="navBlock"><a href="#">入学申请</a>
                             <ul class="navSlideDown" style="display: none;">
                                 <li><a href="pageShow.aspx?pid=63">入学条件</a></li>
                                 <li><a href="pageShow.aspx?pid=64">申请流程</a></li>
@@ -53,7 +53,7 @@
                                 <li><a href="pageShow.aspx?pid=68">费用说明</a></li>
                             </ul>
                         </li>
-                        <li class="navBlock"><a href="">专业学习</a>
+                        <li class="navBlock"><a href="#">专业学习</a>
                             <ul class="navSlideDown" style="display: none;">
                                 <li><a href="pageShow.aspx?pid=69">博士专业</a></li>
                                 <li><a href="pageShow.aspx?pid=70">硕士专业</a></li>
@@ -66,7 +66,7 @@
 
                             </ul>
                         </li>
-                        <li class="navBlock"><a href="pageShow.aspx?pid=29">奖学金</a>
+                        <li class="navBlock"><a href="#">奖学金</a>
                             <ul class="navSlideDown" style="display: none;">
                                 <li><a href="pageShow.aspx?pid=79">中国政府奖学金</a></li>
                                 <li><a href="pageShow.aspx?pid=80">中国政府海洋奖学金</a></li>
@@ -78,13 +78,13 @@
                         </li>
                         <li class="navBlock"><a href="pageShow.aspx?pid=97">中外合作办学</a>
                         </li>
-                        <li class="navBlock"><a href="">规章制度</a>
+                        <li class="navBlock"><a href="#">规章制度</a>
                             <ul class="navSlideDown" style="display: none;">
                                 <li><a href="pageShow.aspx?pid=93">学院规章制度</a></li>
                                 <li><a href="pageShow.aspx?pid=94">学生规章制度</a></li>
                             </ul>
                         </li>
-                        <li class="navBlock"><a href="">生活指南</a>
+                        <li class="navBlock"><a href="#">生活指南</a>
                             <ul class="navSlideDown" style="display: none;">
                                 <li><a href="pageShow.aspx?pid=83">留学生手册</a></li>
                                 <li><a href="pageShow.aspx?pid=84">学校校历</a></li>
@@ -98,7 +98,7 @@
                             </ul>
                         </li>
 
-                        <li class="navBlock"><a>资料下载</a>
+                        <li class="navBlock"><a href="#">资料下载</a>
                             <ul class="navSlideDown" style="display: none;">
                                 <li><a href="filesDownload.aspx?viewlevel=0">学生资料</a></li>
                                 <li><a href="filesDownload.aspx?viewlevel=1">办公资料</a></li>
@@ -125,6 +125,7 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/html5.js"></script>
         <script type="text/javascript" src="js/respond.js"></script>
+        <script type="text/javascript">$("li").each(function () { if ($(this).children()[0] && $(this).children()[0].innerHTML == $(".containRight h1")[0].innerHTML) { $(this).addClass("on") } })</script>
     </form>
 </body>
 </html>

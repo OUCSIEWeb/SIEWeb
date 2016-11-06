@@ -21,11 +21,14 @@
         <asp:ListItem Text="通知公告" Value="1"></asp:ListItem>
         <asp:ListItem Text="学生家园" Value="2"></asp:ListItem>
     </asp:DropDownList>
-    <asp:Label runat="server" ID="label3">主页滚动图片:</asp:Label><br />
-    <asp:FileUpload runat="server" ID="filedtop" /><label runat="server" id="Lbltips1" style="color:red" ></label>
-    <asp:Label runat="server" ID="label4">列表滚动图片:</asp:Label><br />
+    <br />
+    <asp:Label runat="server" ID="label3">主页滚动图片(可选，请上传1190×400px大小的图片):</asp:Label><br />
+    <asp:FileUpload runat="server" ID="filedtop" /><label runat="server" id="Lbltips1" style="color:red" > </label>
+    <br />
+    <asp:Label runat="server" ID="label4">列表顶端图片(可选，请上传380×140px大小的图片)</asp:Label>
+    <br />
     <asp:FileUpload runat="server" ID="filedlist" /><label runat="server" id="Lbltips2" style="color:red" ></label>
-    <asp:CheckBox ID="IfTop" runat="server" Text="是否选择在主页中显示" /><br />
+    <%--<asp:CheckBox ID="IfTop" runat="server" Text="是否选择在主页中显示" />--%><br />
     <asp:Button runat="server" ID="BtnOk" OnClick="BtnOk_Click" Text="提交" />
     <script type="text/javascript">
 

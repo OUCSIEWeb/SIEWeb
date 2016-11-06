@@ -24,6 +24,7 @@ public partial class newslist : System.Web.UI.Page
             int currentPage = 1;
             int pageSize = getPageSize();
             ArticlesBind(currentPage, pageSize);
+            BindKind();
         }
     }
 
@@ -178,6 +179,33 @@ public partial class newslist : System.Web.UI.Page
         ArticlesBind(pageNum, pageSize);
         TxtPageNum.Text = pageNum.ToString();
         lbNow.Text = TxtPageNum.Text;
+    }
+
+    void BindKind()    
+    {
+        try
+        {
+            int viewlevel = Convert.ToInt32(Request.QueryString["viewlevel"].ToString());
+            if (viewlevel == 0)
+            {
+                lbKind.Text = "学生资料";
+                li_student.Attributes["class"] = "on";
+                li_teacher.Attributes["class"] = "";
+            }
+            if (viewlevel == 1)
+            {
+                lbKind.Text = "办公资料";
+                li_student.Attributes["class"] = "";
+                li_teacher.Attributes["class"] = "on";
+            
+            }
+        }
+        catch
+        {
+            lbKind.Text = "学生资料";
+            li_student.Attributes["class"] = "on";
+            li_teacher.Attributes["class"] = "";
+        }
     }
 
 }

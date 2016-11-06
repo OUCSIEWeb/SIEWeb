@@ -76,7 +76,7 @@ public partial class admin_addPage : System.Web.UI.Page
             }
             page.toppicture = topName;
             page.listpicture = listName;
-            page.iftop = IfTop.Checked;
+            page.iftop = true;
             page.title = TxtTitle.Text.Trim();
             page.body = str;
             page.createtime = DateTime.Now;

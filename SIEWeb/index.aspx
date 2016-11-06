@@ -57,11 +57,12 @@
 				<div class="childTittle clearfix">
 					<h3>新闻动态</h3>
 					<span>NEWS</span>
-					<a href="">更多>></a>
+					<a href="newslist.aspx?classid=0">更多>></a>
 				</div>
 				<div class="childBorder"></div>
 				<div class="childInner">
-					<a class="picture" id="a1" runat="server" href=""><img id="img1" runat="server" class="picture" src="images/picture.png" alt=""></a>
+					<a class="picture" id="a1" runat="server" href="">
+                        <img id="img1" runat="server" src="images/picture.png" alt=""></a>
 					<ul>
                         <asp:Repeater ID="Rptn1" runat="server">
                             <ItemTemplate>
@@ -75,7 +76,7 @@
 				<div class="childTittle clearfix">
 					<h3>通知公告</h3>
 					<span>NOTICE</span>
-					<a href="">更多>></a>
+					<a href="newslist.aspx?classid=1">更多>></a>
 				</div>
 				<div class="childBorder"></div>
 				<div class="childInner">
@@ -93,7 +94,7 @@
 				<div class="childTittle clearfix">
 					<h3>学生家园</h3>
 					<span>HOME</span>
-					<a href="">更多>></a>
+					<a href="newslist.aspx?classid=2">更多>></a>
 				</div>
 				<div class="childBorder"></div>
 				<div class="childInner">
@@ -117,7 +118,7 @@
 					<span>&nbsp;|&nbsp;</span>
 					<a href=""style="display:inline">国家留学网</a>
 					<span>&nbsp;|&nbsp;</span>
-					<a href=""style="display:inline">测试</a>
+					<a href="./admin/index.aspx"style="display:inline">进入后台</a>
 				</li>
 			</div>
 		</div>

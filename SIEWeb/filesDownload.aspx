@@ -53,13 +53,13 @@
             <div class="containLeft" runat="server">
                 <h3>资料下载</h3>
                 <ul class="navContain" id="navContain">
-                    <li><a href="filesDownload.aspx?viewlevel=0">学生资料</a></li>
-                    <li><a href="filesDownload.aspx?viewlevel=1">办公资料</a></li>
+                    <li id="li_student" runat="server"><a href="filesDownload.aspx?viewlevel=0">学生资料</a></li>
+                    <li id="li_teacher" runat="server"><a href="filesDownload.aspx?viewlevel=1">办公资料</a></li>
                 </ul>
             </div>
 
             <div class="containRight">
-                <h1>资料下载<small>
+                <h1><asp:Label ID="lbKind" runat="server"></asp:Label><small>
                 共有
                 <asp:Literal ID="LtlArticlesCount" runat="server"></asp:Literal>
                 个

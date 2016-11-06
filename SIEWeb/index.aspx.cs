@@ -21,19 +21,10 @@ public partial class index : System.Web.UI.Page
             img2.Src = "." + temp.listpicture;
             a2.HRef = "newsshow.aspx?nid=" + temp.id.ToString();
             temp = PBind(2);
-            img3.Src = "."+temp.listpicture;
+            img3.Src = "." + temp.listpicture;
             a3.HRef = "newsshow.aspx?nid=" + temp.id.ToString();
-            using (var db = new SiewebEntities())
-            {
-                var top = from it in db.news
-                          where it.lang == 0 && it.iftop == true
-                          orderby it.updatetime descending
-                          select it;
-                RptTop1.DataSource = top.ToList().Take(5);
-                RptTop1.DataBind();
-                RptTop2.DataSource = top.ToList().Take(5);
-                RptTop2.DataBind();
-            }
+            BindTop();
+           
         }
     }
 
@@ -50,15 +41,37 @@ public partial class index : System.Web.UI.Page
         }
     }
 
+
+    protected void BindTop()
+    {
+        using (var db = new SiewebEntities())
+        {
+            var top = from it in db.news
+                        where it.lang == 0 && it.toppicture!=""
+                        orderby it.updatetime descending
+                        select it;
+            RptTop1.DataSource = top.ToList().Take(3);
+            RptTop1.DataBind();
+            RptTop2.DataSource = top.ToList().Take(3);
+            RptTop2.DataBind();
+        }
+    }
     protected news PBind(int i)
     {
-        news re=new news();
+        news re = new news();
         try
         {
             using (var db = new SiewebEntities())
             {
-                news m = db.news.FirstOrDefault(a => a.lang == 0 && a.newclass == i);
-                re = m;
+                var se = from it in db.news
+                         where it.lang == 0 && it.newclass == i
+                         orderby it.updatetime descending
+                         select it;
+                for (int j = 0; j < se.ToList().Count; j++)
+                {
+                    if (se.ToList()[j].listpicture != "")
+                        return se.ToList()[j];
+                }
             }
         }
         catch
@@ -68,8 +81,6 @@ public partial class index : System.Web.UI.Page
         }
         return re;
     }
-
-
 
    
 }
