@@ -69,7 +69,7 @@
             </div>
 
             <div class="containLeft" id="Div2" runat="server" visible="false">
-                <h3>专业介绍</h3>
+                <h3>专业学习</h3>
                 <ul class="navContain" id="navContain">
                     <li><a href="pageShow.aspx?pid=69">博士专业</a></li>
                     <li><a href="pageShow.aspx?pid=70">硕士专业</a></li>
@@ -83,13 +83,7 @@
                 </ul>
             </div>
 
-            <div class="containLeft" id="Div3" runat="server" visible="false">
-                <h3>HSK</h3>
-                <ul class="navContain" id="navContain">
-                    <li><a href="pageShow.aspx?pid=77">考点介绍</a></li>
-                    <li><a href="pageShow.aspx?pid=78">报名考试信息</a></li>
-                </ul>
-            </div>
+
 
             <div class="containLeft" id="Div4" runat="server" visible="false">
                 <h3>奖学金</h3>
@@ -99,6 +93,14 @@
                     <li><a href="pageShow.aspx?pid=81">孔子学院奖学金</a></li>
                     <li><a href="pageShow.aspx?pid=82">校长奖学金</a></li>
                 </ul>
+            </div> 
+
+            <div class="containLeft" id="Div3" runat="server" visible="false">
+                <h3><a href="pageShow.aspx?pid=77">HND项目</h3>
+            </div>
+
+            <div class="containLeft" id="Div8" runat="server" visible="false">
+                <h3><a href="pageShow.aspx?pid=97">中外合作办学</h3>
             </div>
 
             <div class="containLeft" id="Div5" runat="server" visible="false">
@@ -113,7 +115,6 @@
                     <li><a href="pageShow.aspx?pid=89">生活提示</a></li>
                     <li><a href="pageShow.aspx?pid=90">安全提示</a></li>
                     <li><a href="pageShow.aspx?pid=91">医疗保险</a></li>
-                    <li><a href="pageShow.aspx?pid=92">常用下载</a></li>
                 </ul>
             </div>
 

@@ -36,6 +36,7 @@ public partial class admin_fileAdd : System.Web.UI.Page
                     fs.title = TxtTitle.Text;
                     fs.filename = finalname;
                     fs.createtime = DateTime.Now;
+                    fs.viewlevel =Convert.ToInt32( DdlKind.SelectedValue.ToString());
                     db.files.Add(fs);
                     db.SaveChanges();
                     Response.Write("<script>alert('添加成功');window.location.href='files.aspx'</script>");

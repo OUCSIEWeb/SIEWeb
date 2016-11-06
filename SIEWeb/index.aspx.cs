@@ -15,13 +15,13 @@ public partial class index : System.Web.UI.Page
             NDataBind(Rptn2, 1);
             NDataBind(Rptn3, 2);
             news temp=PBind(0);
-            img1.Src = temp.listpicture;
+            img1.Src ="."+ temp.listpicture;
             a1.HRef="newsshow.aspx?nid="+temp.id.ToString();
             temp = PBind(1);
-            img2.Src = temp.listpicture;
+            img2.Src = "." + temp.listpicture;
             a2.HRef = "newsshow.aspx?nid=" + temp.id.ToString();
             temp = PBind(2);
-            img3.Src = temp.listpicture;
+            img3.Src = "."+temp.listpicture;
             a3.HRef = "newsshow.aspx?nid=" + temp.id.ToString();
             using (var db = new SiewebEntities())
             {
@@ -68,6 +68,8 @@ public partial class index : System.Web.UI.Page
         }
         return re;
     }
+
+
 
    
 }

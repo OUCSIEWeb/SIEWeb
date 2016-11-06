@@ -33,11 +33,6 @@
                             <li><a href="editorPage.aspx?pid=54">学校简介</a></li>
                             <li><a href="editorPage.aspx?pid=55">学院简介</a></li>
                             <li><a href="editorPage.aspx?pid=56">机构设置</a></li>
-                            <li><a href="editorPage.aspx?pid=57">学院办公室</a></li>
-                            <li><a href="editorPage.aspx?pid=60">学生事务部</a></li>
-                            <li><a href="editorPage.aspx?pid=58">招生工作部</a></li>
-                            <li><a href="editorPage.aspx?pid=59">教学工作部</a></li>
-                            <li><a href="editorPage.aspx?pid=61">国际合作办学部</a></li>
                             <li><a href="editorPage.aspx?pid=62">城市简介</a></li>
                             <li><a href="teacherslist.aspx">院领导</a></li>
                         </ul>
@@ -65,12 +60,12 @@
                             <li><a href="editorPage.aspx?pid=74">课程安排</a></li>
                         </ul>
                     </li>
-                    <li><a href="">HSK</a>
+                   <%-- <li><a href="">HSK</a>
                         <ul class="hide">
                             <li><a href="editorPage.aspx?pid=77">考点介绍</a></li>
                             <li><a href="editorPage.aspx?pid=78">报名考试信息</a></li>
                         </ul>
-                    </li>
+                    </li>--%>
                     <li><a href="">奖学金</a>
                         <ul class="hide">
                             <li><a href="editorPage.aspx?pid=79">中国政府奖学金</a></li>
@@ -79,6 +74,13 @@
                             <li><a href="editorPage.aspx?pid=82">校长奖学金</a></li>
                         </ul>
                     </li>
+
+                    <li><a href="editorNews.aspx?pid=77">HND项目</a>
+                    </li>
+
+                    <li><a href="editorNews.aspx?pid=97">中外合作办学</a>
+                    </li>
+
                     <li><a href="">生活指南</a>
                         <ul class="hide">
                             <li><a href="editorPage.aspx?pid=83">留学生手册</a></li>

@@ -35,7 +35,7 @@
                       <asp:Repeater ID="RptTop2" runat="server">
                           <ItemTemplate>
                               <div class="item">
-                              <a href="newsshow.aspx?nid=<%#Eval("id")%>"><img class="img-responsive" src="<%#Eval("toppicture")%>"  ></a>
+                              <a href="newsshow.aspx?nid=<%#Eval("id")%>"><img class="img-responsive" src="<%#"."+Eval("toppicture")%>"  ></a>
                                   </div>
                           </ItemTemplate>
                       </asp:Repeater>
@@ -109,15 +109,15 @@
 			</div>
 			<div class="childLittle">
 				<li>
-					<a href="">中国海洋大学</a>
+					<a href=""style="display:inline">中国海洋大学</a>
 					<span>&nbsp;|&nbsp;</span>
-					<a href="">中国海洋大学教务处</a>
+					<a href=""style="display:inline">中国海洋大学教务处</a>
 					<span>&nbsp;|&nbsp;</span>
-					<a href="">中华人民共和国出入管理局</a>
+					<a href=""style="display:inline">中华人民共和国出入管理局</a>
 					<span>&nbsp;|&nbsp;</span>
-					<a href="">国家留学网</a>
+					<a href=""style="display:inline">国家留学网</a>
 					<span>&nbsp;|&nbsp;</span>
-					<a href="">测试</a>
+					<a href=""style="display:inline">测试</a>
 				</li>
 			</div>
 		</div>

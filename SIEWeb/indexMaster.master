@@ -8,8 +8,8 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/index_style.css">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index_style.css">
     <link rel="stylesheet" type="text/css" href="css/contain_style.css">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -74,11 +74,11 @@
                                 <li><a href="pageShow.aspx?pid=82">校长奖学金</a></li>
                             </ul>
                         </li>
-                        <li class="navBlock"><a href="pageShow.aspx?pid=29">HND项目</a>
+                        <li class="navBlock"><a href="pageShow.aspx?pid=77">HND项目</a>
                         </li>
-                        <li class="navBlock"><a href="pageShow.aspx?pid=29">中外合作办学</a>
+                        <li class="navBlock"><a href="pageShow.aspx?pid=97">中外合作办学</a>
                         </li>
-                        <li class="navBlock"><a href="pageShow.aspx?pid=42">规章制度</a>
+                        <li class="navBlock"><a href="">规章制度</a>
                             <ul class="navSlideDown" style="display: none;">
                                 <li><a href="pageShow.aspx?pid=93">学院规章制度</a></li>
                                 <li><a href="pageShow.aspx?pid=94">学生规章制度</a></li>
@@ -98,7 +98,11 @@
                             </ul>
                         </li>
 
-                        <li class="navBlock"><a href="filesDownload.aspx">资料下载</a>
+                        <li class="navBlock"><a>资料下载</a>
+                            <ul class="navSlideDown" style="display: none;">
+                                <li><a href="filesDownload.aspx?viewlevel=0">学生资料</a></li>
+                                <li><a href="filesDownload.aspx?viewlevel=1">办公资料</a></li>
+                            </ul>
                         </li>
                         <li class="navBlock"><a href="pageShow.aspx?pid=95">联系我们</a>
                         </li>

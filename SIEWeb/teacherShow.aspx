@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Cout1" Runat="Server">
     <asp:Repeater runat="server" ID="Rpt">
         <ItemTemplate>
+             <h1 class="alignCenter"><%#Eval("tname") +"简介"%> </h1>
             <%#Eval("body") %>
         </ItemTemplate>
     </asp:Repeater>

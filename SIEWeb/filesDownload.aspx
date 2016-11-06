@@ -53,6 +53,8 @@
             <div class="containLeft" runat="server">
                 <h3>资料下载</h3>
                 <ul class="navContain" id="navContain">
+                    <li><a href="filesDownload.aspx?viewlevel=0">学生资料</a></li>
+                    <li><a href="filesDownload.aspx?viewlevel=1">办公资料</a></li>
                 </ul>
             </div>
 
@@ -68,9 +70,9 @@
                 </asp:DropDownList>个
                 </small></h1>
                 
-                <asp:Repeater runat="server" ID="Rpt">
+                <asp:Repeater runat="server" ID="Rpt"> 
                     <ItemTemplate>
-                        <a href="<%#Eval("filename")%>"><%#Eval("title")%></a>
+                        <a href="<%#"."+Eval("filename")%>"><%#Eval("title")%></a>
                         <%#Eval("createtime")%><br />
                     </ItemTemplate>
                 </asp:Repeater>

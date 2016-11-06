@@ -55,6 +55,10 @@ public partial class admin_left : System.Web.UI.MasterPage
         {
             Div7.Visible = true;
         }
+        else if (belong == 9)
+        {
+            Div8.Visible = true;
+        }
 
     }
 }

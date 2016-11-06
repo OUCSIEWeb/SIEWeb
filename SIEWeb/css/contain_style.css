@@ -16,7 +16,7 @@ a{
 	font-size: 36px;
     color: #474747;
     text-align: center;
-    padding: 30px 0;
+    padding: 24px 0;
 }
 .navContain li{
 	width: 100%;
@@ -168,6 +168,9 @@ a{
 .leaderTable tr td p span{
 	font-size:14px;
 	font-family:'宋体';
+}
+.navContain li a {
+    font-size:16px;
 }
 /*如果不合适请直接删掉*/
 

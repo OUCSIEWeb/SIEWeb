@@ -42,9 +42,9 @@
 
                 <h3>信息导航</h3>
                 <ul class="navContain" id="navContain">
-                    <li><a href="newslist.aspx?classid==0">新闻速递</a></li>
-                    <li><a href="newslist.aspx?classid==1">通知公告</a></li>
-                    <li><a href="newslist.aspx?classid==2">学生家园</a></li> 
+                    <li runat="server" id="news_li"><a href="newslist.aspx?classid=0">新闻速递</a></li>
+                    <li runat="server" id="notice_li"><a href="newslist.aspx?classid=1">通知公告</a></li>
+                    <li runat="server" id="student_li"><a href="newslist.aspx?classid=2">学生家园</a></li> 
                 </ul>
             </div>
 

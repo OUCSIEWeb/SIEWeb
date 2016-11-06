@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 public partial class newslist : System.Web.UI.Page
@@ -31,11 +32,26 @@ public partial class newslist : System.Web.UI.Page
     void titleBind(int titleId)
     {
         if (titleId == 0)
+        {
             lbKind.Text = "新闻速递";
+            notice_li.Attributes["class"] = "";
+            student_li.Attributes["class"] = "";
+            news_li.Attributes["class"] = "on";
+        }
         if (titleId == 1)
+        {
             lbKind.Text = "通知公告";
+            notice_li.Attributes["class"] = "on";
+            student_li.Attributes["class"] = "";
+            news_li.Attributes["class"] = "";
+        }
         if (titleId == 2)
+        {
             lbKind.Text = "学生家园";
+            notice_li.Attributes["class"] = "";
+            student_li.Attributes["class"] = "on";
+            news_li.Attributes["class"] = "";
+        }
     }
 
     void ArticlesBind(int CurrentPage, int PageSize) //文章绑定
@@ -196,5 +212,6 @@ public partial class newslist : System.Web.UI.Page
         TxtPageNum.Text = pageNum.ToString();
         lbNow.Text = TxtPageNum.Text;
     }
+
 
 }
