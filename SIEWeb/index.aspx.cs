@@ -37,9 +37,9 @@ public partial class index : System.Web.UI.Page
                      select it;
             //RptTop1.DataSource = se.ToList();
             //RptTop1.DataBind();
-            imgtop1.ImageUrl ="admin/"+ se.ToList()[0].picname;
-            imgtop2.ImageUrl = "admin/" + se.ToList()[1].picname;
-            imgtop3.ImageUrl = "admin/" + se.ToList()[2].picname;
+            //imgtop1.ImageUrl ="admin/"+ se.ToList()[0].picname;
+            //imgtop2.ImageUrl = "admin/" + se.ToList()[1].picname;
+            //imgtop3.ImageUrl = "admin/" + se.ToList()[2].picname;
         }
     
     }
