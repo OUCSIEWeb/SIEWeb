@@ -12,6 +12,15 @@
         .containRight h1{
             text-align:left;
         }
+		.containRight {
+			font-size: 16px;
+			line-height: 2;
+		}
+		input[type="submit"]{
+			background-color:#f2f2f2;
+			border:none;
+			padding:0px 5px;
+		}
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">

@@ -1,4 +1,4 @@
-html{
+﻿html{
 	height: 100%;
 }
 body{
@@ -125,7 +125,7 @@ div.clear{
 	width: 100%;
 	height: 50px;
 	background: #3ca7e1;
-	opacity: 0.75;
+	opacity: 0.9;
 	border-bottom: solid 1px #d8f3ff;
 }
 .indexHeader .indexHeaderNav ul.navSlideDown li:last-child{
@@ -133,13 +133,13 @@ div.clear{
 }
 .indexHeader .indexHeaderNav ul.navSlideDown li:hover{
 	background: #3ca7e1;
-	opacity: 0.9;
+	opacity: 0.85;
 }
 .indexHeader .indexHeaderNav ul.navSlideDown li a{
 	color: white;
 	display: block;
 	width: 100%;
-	font-size: 14px;
+	font-size: 18px;
 	height: 50px;
 	text-align: center;
 }
@@ -214,6 +214,7 @@ div.clear{
 	position: relative;
 	top: 18px;
 	right: 5px;
+	font-size: 16px;
 }
 
 .indexMainInnerChild .childTittle a:hover{
@@ -228,6 +229,17 @@ div.clear{
 
 .indexMainInnerChild .childInner a{
 	display: block;
+}
+
+.indexMainInnerChild .childInner li{
+	border: 1px dashed #aaa;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.indexMainInnerChild .childInner li:last-child{
+	border-bottom:0px;
 }
 
 .indexMainInnerChild .childInner a.picture{
@@ -247,8 +259,8 @@ div.clear{
 	color: #404040;
 	white-space: nowrap; 
     text-overflow: ellipsis; 
+	margin: 2px 0px;
     overflow: hidden;
-    margin-top: 5px;
     float: left;
 }
 
@@ -260,7 +272,7 @@ div.clear{
 	width: 15%;
 	font-size: 14px;
 	position: relative;
-	top: 8px;
+	top: 5px;
 }
 
 .indexMainInnerChild .childInner ul li a:hover{
@@ -283,20 +295,31 @@ div.clear{
 .childLittle li span{
 	color: #ccc;
 }
-
+.childLittle li a img{
+	height:40px;
+}
 /*footer*/
 .indexFooter{
-	width: 100%;
-	height: 80px;
-	background: url(../images/footer_background.jpg);
-	font-size: 14px;
-	padding-top: 10px;
+    width: 100%;
+    height: 80px;
+    background: url(../images/footer_background.jpg);
+    font-size: 14px;
+    padding-top: 10px;
 }
 .indexFooter li{
 	text-align: center;
 	color: white;
-	opacity: 0.7;
+	opacity: 0.9;
 	margin-top: 5px;
+}
+.indexFooterSlider{
+	display: block;
+    margin: 5px auto;
+    width: 500px;
+	overflow: hidden;
+}
+.indexFooterSlider span{
+	position:relative;
 }
 /*@media screen and (max-width: 1500px){
 	.indexHeader .indexHeaderTittle{

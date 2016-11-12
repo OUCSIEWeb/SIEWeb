@@ -118,7 +118,10 @@
 
         <div class="indexFooter">
             <li>校址：青岛市崂山区松岭路238号  邮编：266100</li>
-            <li>Copyright © 2016 中国海洋大学国际教育学院  All Rights Reserved</li>
+            <li class="indexFooterSlider">
+				<span class = "defaultSpan">Copyright © 2016 中国海洋大学国际教育学院  All Rights Reserved</span>
+				<span style="display:none" class="motivatedSpan"><a href="./admin/index.aspx"style="display:inline;color:white">进入后台</a></span>
+			</li>
         </div>
         <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

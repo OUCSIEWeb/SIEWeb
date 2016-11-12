@@ -31,4 +31,9 @@ window.onload = function(){
 		// 	$("ul.notice").css("display","none");
 		// 	$("ul.news").css("display","block");
 		// })
+		$(".indexFooterSlider").hover(function(){console.log(1111);$(".defaultSpan").animate({"bottom":"40px"},"fast",function(){$(this).css({"display":"none"});$(".motivatedSpan").css({"top":"40px","display":"block"});$(".motivatedSpan").animate({"top":"0px"},"fast")})},function(){$(".motivatedSpan").animate({"top":"40px"},"fast",function(){$(".motivatedSpan").css({"display":"none"});$(".defaultSpan").css({"bottom":"40px","display":"block"});$(".defaultSpan").animate({"bottom":"0px"},"fast")})})
+		//底部滑块
+	
 	}
+	
+	

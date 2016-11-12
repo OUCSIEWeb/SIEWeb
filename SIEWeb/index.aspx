@@ -112,15 +112,14 @@
 			</div>
 			<div class="childLittle">
 				<li>
-					<a href=""style="display:inline">中国海洋大学</a>
-					<span>&nbsp;|&nbsp;</span>
-					<a href=""style="display:inline">中国海洋大学教务处</a>
-					<span>&nbsp;|&nbsp;</span>
-					<a href=""style="display:inline">中华人民共和国出入管理局</a>
-					<span>&nbsp;|&nbsp;</span>
-					<a href=""style="display:inline">国家留学网</a>
-					<span>&nbsp;|&nbsp;</span>
-					<a href="./admin/index.aspx"style="display:inline">进入后台</a>
+					<a href="http://www.ouc.edu.cn" style="display:inline"><img src="images/cn01.png" /></a>
+					<a href="http://www.moe.gov.cn" style="display:inline"><img src="images/cn02.png" /></a>
+					<a href="http://www.csc.edu.cn"style="display:inline"><img src="images/cn03.png" /></a>
+					<a href="http://www.lxbx.net/index.html"style="display:inline"><img src="images/cn04.png" /></a>
+					<a href="http://hanban.edu.cn/"style="display:inline"><img src="images/cn05.png" /></a>
+					<a href="http://www.mps.gov.cn/n16/n84147/index.html"style="display:inline"><img src="images/cn06.png" /></a>
+					<a href="http://www.ceaie.edu.cn/index.html"style="display:inline"><img src="images/cn07.jpg" /></a>
+					<a href="http://www.cafsa.org.cn/"style="display:inline"><img src="images/cn08.jpg" /></a>
 				</li>
 			</div>
 		</div>
