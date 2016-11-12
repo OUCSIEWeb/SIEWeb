@@ -10,49 +10,57 @@ a{
 .containLeft{
 	width: 300px;
 	/*height: 600px;*/
-	background: #f2f2f2;
 }
 .containLeft h3{
-	font-size: 36px;
-    color: #474747;
-    text-align: center;
-    padding: 24px 0;
+	font-size: 24px;
+    color: rgba(255,255,255,0.8);
+    /*text-align: center;*/
+    padding: 24px 76px;
+	background: #63c8fe;
+	margin: 0;
 }
 .navContain li{
 	width: 100%;
 	display: inline-block;
-	color: #474747;
-	text-align:center; 
+	/*text-align:center; */
+	padding-left: 80px;
 	height: 48px;
 	line-height: 48px;
+	color: rgba(255,255,255,0.8);
+	background: #3ca7e1;
 	-webkit-transition:background 0.3s linear;
     -moz-transition:background 0.3s linear;
     -ms-transition:background 0.3s linear;
     -o-transition:background 0.3s linear;
     transition:background 0.3s linear;
 }
-.navContain li:hover{
+/*.navContain li:hover{
 	background-color: white;
-}
+}*/
 .navContain>li:last-child{
 	margin-bottom: 40px;
 }
-.navSlide{
+.navSlide li{
+	background: #2c85b4;
 	display: inline-block;
 }
-.navSlide a{
-	color: #474747;
+.navSlide a,.navContain a{
+	color: rgba(255,255,255,0.7);
+}
+.navSlide a:hover,.navContain a:hover{
+	color: rgba(255,255,255,1);
 }
 .navSlide li{
 	color: #474747;
 	text-align:left; 
 	height: 48px;
 	line-height: 48px;
-	padding-left: 150px; 
+	padding-left: 111px; 
 }
 .navContain .on{
-	background: url(../images/bluebar.png) no-repeat;
-	background-color: white;
+	/*background: url(../images/bluebar.png) no-repeat;
+	background-color: white;*/
+	color: rgba(255,255,255,1);
 }
 .hide{
 	display: none;
@@ -61,7 +69,7 @@ a{
 	margin-bottom:20px;
 }
 .containRight{
-	padding: 20px;
+	padding: 0 20px;
 	width: 890px;
 }
 .containRight,.containLeft{
@@ -74,9 +82,9 @@ a{
 .containRight h1:first-child{
 	border-bottom: #c2c2c2 1px dotted;
 	font-family:'微软雅黑';
-	font-size: 36px;
+	font-size: 24px;
     margin-bottom: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 29px;
 }
 .containRight .alignCenter{
 	text-align:center;
