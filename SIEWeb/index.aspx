@@ -70,7 +70,7 @@
                         <asp:Repeater ID="Rptn1" runat="server">
                             <ItemTemplate>
                                <%-- <font color="<%# Container.ItemIndex == 0 ? "red": ""%>">--%>
-                                <li class="clearfix"><a style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"  href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a><span style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"><%#Eval("updatetime","{0:MM-dd}")%></span></li>
+                                <li class="clearfix"><i class="glyphicon glyphicon-chevron-right"></i><a style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"  href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a><span style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"><%#Eval("updatetime","{0:MM-dd}")%></span></li>
                                 <%--//</font>--%>
                             </ItemTemplate>
                         </asp:Repeater>
@@ -89,7 +89,7 @@
 					<ul>
                         <asp:Repeater ID="Rptn2" runat="server">
                             <ItemTemplate>
-                                <li class="clearfix"><a style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"  href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a><span style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"><%#Eval("updatetime","{0:MM-dd}")%></span></li>
+                            <li class="clearfix"><i class="glyphicon glyphicon-chevron-right"></i><a style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"  href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a><span style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"><%#Eval("updatetime","{0:MM-dd}")%></span></li>
                             </ItemTemplate>
                         </asp:Repeater>
 					</ul>
@@ -107,13 +107,15 @@
 					<ul>
                         <asp:Repeater ID="Rptn3" runat="server">
                             <ItemTemplate>
-                                <li class="clearfix"><a style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"  href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a><span style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"><%#Eval("updatetime","{0:MM-dd}")%></span></li>
+                                <li class="clearfix"><i class="glyphicon glyphicon-chevron-right"></i><a style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"  href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a><span style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"><%#Eval("updatetime","{0:MM-dd}")%></span></li>
                             </ItemTemplate>
                         </asp:Repeater>
 					</ul>
 				</div>
 			</div>
-			<div class="childLittle">
+		</div>
+	</div>
+	<div class="childLittle">
 				<li>
 					<a href="http://www.ouc.edu.cn" style="display:inline"><img src="images/cn01.png" /></a>
 					<a href="http://www.moe.gov.cn" style="display:inline"><img src="images/cn02.png" /></a>
@@ -125,7 +127,5 @@
 					<a href="http://www.cafsa.org.cn/"style="display:inline"><img src="images/cn08.jpg" /></a>
 				</li>
 			</div>
-		</div>
-	</div>
 </asp:Content>
 
