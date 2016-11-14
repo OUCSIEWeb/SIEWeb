@@ -69,21 +69,14 @@
             </div>
 
             <div class="containRight">
-                <h1><asp:Label ID="lbKind" runat="server"></asp:Label><small>
-                共有
-                <asp:Literal ID="LtlArticlesCount" runat="server"></asp:Literal>
-                个
-                每页<asp:DropDownList ID="DdlPageSize" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DdlPageSize_SelectedIndexChanged">
-                    <asp:ListItem>5</asp:ListItem>
-                    <asp:ListItem>10</asp:ListItem>
-                    <asp:ListItem>20</asp:ListItem>
-                </asp:DropDownList>个
-                </small></h1>
+                <h1><asp:Label ID="lbKind" runat="server"></asp:Label></h1>
                 
                 <asp:Repeater runat="server" ID="Rpt">
                     <ItemTemplate>
-                        <a href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a>
-                        <%#Eval("updatetime")%><br />
+                       
+                        
+                        <a style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>" href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a>
+                      <font  style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>">  <%#Eval("updatetime","{0:yyyy-MM-dd}")%></font><br />
                     </ItemTemplate>
                 </asp:Repeater>
                  <br />
@@ -95,7 +88,7 @@
                 <asp:Label ID="lbNow" runat="server" Text="1"></asp:Label>
                 /
                 <asp:Label ID="lbTotal" runat="server" Text="1"></asp:Label>
-                转<asp:TextBox ID="TxtPageNum" runat="server" Height="22px" style="font-size: large" Width="37px">1</asp:TextBox>
+                转<asp:TextBox ID="TxtPageNum" runat="server" Height="23px" style="font-size: large" Width="37px">1</asp:TextBox>
                 页
                 <asp:Button ID="BtnJumpPage" runat="server" OnClick="BtnJumpPage_Click" Text="GO" />
             </div>

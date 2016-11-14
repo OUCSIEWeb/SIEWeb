@@ -22,7 +22,14 @@
   				</ol>
   			<!-- Wrapper for slides -->
   				<div class="carousel-inner" role="listbox">
-    				<div class="item active">
+                       <asp:Repeater ID="RptTop2" runat="server">
+                          <ItemTemplate>
+                              <div class=' <%=(i++) <1 ? "item active" : "item" %>'>
+                              <a href="newsshow.aspx?nid=<%#Eval("id")%>"><img class="img-responsive" src="<%#"."+Eval("toppicture")%>"  ></a>
+                                  </div>
+                          </ItemTemplate>
+                      </asp:Repeater>
+    				<div class="item">
                         <%--<img id="imgtop1"  class="img-responsive" runat="server" src="images/banner_1.jpg" alt="">--%>
                         <asp:Image ID="imgtop1" runat="server" ImageUrl="images/banner_1.jpg" CssClass="img-responsive" />
     				</div>
@@ -34,13 +41,7 @@
       				<%--	<img class="img-responsive"  id="imgtop3"  runat="server" src="images/banner_1.jpg">--%>
                          <asp:Image ID="imgtop3" runat="server" ImageUrl="images/banner_1.jpg" CssClass="img-responsive" />
     				</div>
-                      <asp:Repeater ID="RptTop2" runat="server">
-                          <ItemTemplate>
-                              <div class="item">
-                              <a href="newsshow.aspx?nid=<%#Eval("id")%>"><img class="img-responsive" src="<%#"."+Eval("toppicture")%>"  ></a>
-                                  </div>
-                          </ItemTemplate>
-                      </asp:Repeater>
+                     
   				</div>
 
   			<!-- Controls -->
@@ -68,7 +69,9 @@
 					<ul>
                         <asp:Repeater ID="Rptn1" runat="server">
                             <ItemTemplate>
-                                <li class="clearfix"><a href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a><span><%#Eval("updatetime","{0:MM-dd}")%></span></li>
+                               <%-- <font color="<%# Container.ItemIndex == 0 ? "red": ""%>">--%>
+                                <li class="clearfix"><a style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"  href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a><span style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"><%#Eval("updatetime","{0:MM-dd}")%></span></li>
+                                <%--//</font>--%>
                             </ItemTemplate>
                         </asp:Repeater>
 					</ul>
@@ -86,7 +89,7 @@
 					<ul>
                         <asp:Repeater ID="Rptn2" runat="server">
                             <ItemTemplate>
-                                <li class="clearfix"><a href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a><span><%#Eval("updatetime","{0:MM-dd}")%></span></li>
+                                <li class="clearfix"><a style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"  href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a><span style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"><%#Eval("updatetime","{0:MM-dd}")%></span></li>
                             </ItemTemplate>
                         </asp:Repeater>
 					</ul>
@@ -104,7 +107,7 @@
 					<ul>
                         <asp:Repeater ID="Rptn3" runat="server">
                             <ItemTemplate>
-                                <li class="clearfix"><a href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a><span><%#Eval("updatetime","{0:MM-dd}")%></span></li>
+                                <li class="clearfix"><a style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"  href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a><span style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"><%#Eval("updatetime","{0:MM-dd}")%></span></li>
                             </ItemTemplate>
                         </asp:Repeater>
 					</ul>

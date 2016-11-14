@@ -68,16 +68,7 @@
             </div>
 
             <div class="containRight">
-                <h1><asp:Label ID="lbKind" runat="server"></asp:Label><small>
-                共有
-                <asp:Literal ID="LtlArticlesCount" runat="server"></asp:Literal>
-                个
-                每页<asp:DropDownList ID="DdlPageSize" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DdlPageSize_SelectedIndexChanged">
-                    <asp:ListItem>5</asp:ListItem>
-                    <asp:ListItem>10</asp:ListItem>
-                    <asp:ListItem>20</asp:ListItem>
-                </asp:DropDownList>个
-                </small></h1>
+                <h1><asp:Label ID="lbKind" runat="server"></asp:Label></h1>
                 
                 <asp:Repeater runat="server" ID="Rpt"> 
                     <ItemTemplate>

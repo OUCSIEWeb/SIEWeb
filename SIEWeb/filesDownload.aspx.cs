@@ -22,7 +22,7 @@ public partial class newslist : System.Web.UI.Page
             //}
             Session["pagenum"] = 1;
             int currentPage = 1;
-            int pageSize = getPageSize();
+            int pageSize = 10;
             ArticlesBind(currentPage, pageSize);
             BindKind();
         }
@@ -45,7 +45,7 @@ public partial class newslist : System.Web.UI.Page
                 se = se.Skip(PageSize * (CurrentPage - 1)).Take(PageSize); //分页
                 Rpt.DataSource = se.ToList();
                 Rpt.DataBind();
-                LtlArticlesCount.Text = totalAmount.ToString();
+               // LtlArticlesCount.Text = totalAmount.ToString();
             }
         }
         catch 
@@ -55,7 +55,7 @@ public partial class newslist : System.Web.UI.Page
     }
     protected void DdlPageSize_SelectedIndexChanged(object sender, EventArgs e) // pageSize下拉列表改变
     {
-        ArticlesBind(1, getPageSize()); //从第一页绑定，防止单页项目数量变多，导致页码超出范围。
+        ArticlesBind(1, 10); //从第一页绑定，防止单页项目数量变多，导致页码超出范围。
         TxtPageNum.Text = "1";
         lbNow.Text = TxtPageNum.Text;
         Session["pagenum"] = 1;
@@ -90,16 +90,7 @@ public partial class newslist : System.Web.UI.Page
         return pageCount;
     }
 
-    int getPageSize() //获得页面项目数目
-    {
-        int pageSize = 5;
-        if (DdlPageSize.SelectedValue != null)
-        {
-            pageSize = Convert.ToInt32(DdlPageSize.SelectedValue);
-        }
-        return pageSize;
-    }
-
+   
     int getPageNum() //获得当前文本框中的合法数字页码
     {
         int pageNum = Convert.ToInt16(Session["pagenum"]);
@@ -110,8 +101,7 @@ public partial class newslist : System.Web.UI.Page
     protected void BtnPreviousPage_Click(object sender, EventArgs e)
     {
         int pageNum = Convert.ToInt16(Session["pagenum"]) - 1;
-        int pageSize = getPageSize();
-        if (pageNum < 1)
+        int pageSize = 10;
         {
             pageNum = 1;
             return;
@@ -125,7 +115,7 @@ public partial class newslist : System.Web.UI.Page
     protected void BtnNextPage_Click(object sender, EventArgs e)
     {
         int pageNum = Convert.ToInt16(Session["pagenum"]) + 1;
-        int pageSize = getPageSize();
+        int pageSize = 10;
         if (pageNum >= getPageCount(pageSize))
         {
             pageNum = getPageCount(pageSize);
@@ -138,7 +128,7 @@ public partial class newslist : System.Web.UI.Page
 
     protected void BtnHomePage_Click(object sender, EventArgs e)
     {
-        ArticlesBind(1, getPageSize());
+        ArticlesBind(1, 10);
         TxtPageNum.Text = "1";
         lbNow.Text = TxtPageNum.Text;
         Session["pagenum"] = 1;
@@ -146,7 +136,7 @@ public partial class newslist : System.Web.UI.Page
 
     protected void BtnTrailerPage_Click(object sender, EventArgs e)
     {
-        int pageSize = getPageSize();
+        int pageSize = 10;
         int pageNum = getPageCount(pageSize);
         if (pageNum <= 0) //没有内容的情况
         {
@@ -165,7 +155,7 @@ public partial class newslist : System.Web.UI.Page
             pageNum = 1;
         else 
             pageNum = Convert.ToInt32(TxtPageNum.Text);
-        int pageSize = getPageSize();
+        int pageSize = 10;
         int pageCount = getPageCount(pageSize);
         if (pageNum < 1)
         {
