@@ -45,7 +45,7 @@ public partial class admin_addPage : System.Web.UI.Page
             }
             else
             {
-                topName = "/images/banner_1.jpg";
+                topName = "";
             }
             if (filedlist.HasFile)
             {
@@ -72,7 +72,7 @@ public partial class admin_addPage : System.Web.UI.Page
             }
             else
             {
-                listName = "/images/picture.png";
+                listName = "";
             }
             page.toppicture = topName;
             page.listpicture = listName;

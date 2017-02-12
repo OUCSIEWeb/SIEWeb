@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="indexMaster.master.cs" Inherits="indexMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index_style.css">
+    <link rel="stylesheet" type="text/css" href="css/contain_style.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="indexHeader">
+            <div class="indexHeaderDadTittle">
+                <div class="indexHeaderTittle">
+                    <div class="thisTittle clearfix">
+                        <img src="images/logo_all.png">
+                        <div class="search">
+                            <span class="search_logo"></span>
+                            <input type="" name="" placeholder="搜索">
+                            <li>[English] [日本語版] [한국어] [Русский Язык]</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="indexHeaderDadNav">
+                <div class="indexHeaderNav">
+                    <ul class="clearfix">
+                        <li class="navBlock"><a href="index.aspx">首页</a>
+                        </li>
+                        <li class="navBlock"><a href="#">关于我们</a>
+                            <ul class="navSlideDown" style="display: none;">
+                                <li><a href="pageShow.aspx?pid=54">学校简介</a></li>
+                                <li><a href="pageShow.aspx?pid=55">学院简介</a></li>
+                                <li><a href="pageShow.aspx?pid=56">机构设置</a></li>
+                                <li><a href="pageShow.aspx?pid=62">城市简介</a></li>
+                                <li><a href="teachers.aspx">现任领导</a></li>
+                            </ul>
+                        </li>
+                        <li class="navBlock"><a href="#">入学申请</a>
+                            <ul class="navSlideDown" style="display: none;">
+                                <li><a href="pageShow.aspx?pid=63">入学条件</a></li>
+                                <li><a href="pageShow.aspx?pid=64">申请流程</a></li>
+                                <li><a href="pageShow.aspx?pid=65">招生简章</a></li>
+                                <li><a href="pageShow.aspx?pid=66">在线申请</a></li>
+                                <li><a href="pageShow.aspx?pid=67">报到流程</a></li>
+                                <li><a href="pageShow.aspx?pid=68">费用说明</a></li>
+                            </ul>
+                        </li>
+                        <li class="navBlock"><a href="#">专业学习</a>
+                            <ul class="navSlideDown" style="display: none;">
+                                <li><a href="pageShow.aspx?pid=69">博士专业</a></li>
+                                <li><a href="pageShow.aspx?pid=70">硕士专业</a></li>
+                                <li><a href="pageShow.aspx?pid=71">本科专业</a></li>
+                                <li><a href="pageShow.aspx?pid=72">英文授课专业</a></li>
+                                <li><a href="pageShow.aspx?pid=73">汉语言学习</a></li>
+                                <li><a href="pageShow.aspx?pid=74">课程安排</a></li>
+                                <li><a href="pageShow.aspx?pid=75">导师介绍</a></li>
+                                <li><a href="pageShow.aspx?pid=76">学位认证</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="navBlock"><a href="#">奖学金</a>
+                            <ul class="navSlideDown" style="display: none;">
+                                <li><a href="pageShow.aspx?pid=79">中国政府奖学金</a></li>
+                                <li><a href="pageShow.aspx?pid=80">中国政府海洋奖学金</a></li>
+                                <li><a href="pageShow.aspx?pid=81">孔子学院奖学金</a></li>
+                                <li><a href="pageShow.aspx?pid=82">校长奖学金</a></li>
+                            </ul>
+                        </li>
+                        <li class="navBlock"><a href="pageShow.aspx?pid=77">HND项目</a>
+                        </li>
+                        <li class="navBlock"><a href="pageShow.aspx?pid=97">中外合作办学</a>
+                        </li>
+                        <li class="navBlock"><a href="#">规章制度</a>
+                            <ul class="navSlideDown" style="display: none;">
+                                <li><a href="pageShow.aspx?pid=93">学院规章制度</a></li>
+                                <li><a href="pageShow.aspx?pid=94">学生规章制度</a></li>
+                            </ul>
+                        </li>
+                        <li class="navBlock"><a href="#">生活指南</a>
+                            <ul class="navSlideDown" style="display: none;">
+                                <li><a href="pageShow.aspx?pid=83">留学生手册</a></li>
+                                <li><a href="pageShow.aspx?pid=84">学校校历</a></li>
+                                <li><a href="pageShow.aspx?pid=85">证照办理</a></li>
+                                <li><a href="pageShow.aspx?pid=86">校园设施</a></li>
+                                <li><a href="pageShow.aspx?pid=87">公寓住宿</a></li>
+                                <li><a href="pageShow.aspx?pid=88">学生社团</a></li>
+                                <li><a href="pageShow.aspx?pid=89">生活提示</a></li>
+                                <li><a href="pageShow.aspx?pid=90">安全提示</a></li>
+                                <li><a href="pageShow.aspx?pid=91">医疗保险</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="navBlock"><a href="#">资料下载</a>
+                            <ul class="navSlideDown" style="display: none;">
+                                <li><a href="filesDownload.aspx?viewlevel=0">学生资料</a></li>
+                                <li><a href="filesDownload.aspx?viewlevel=1">办公资料</a></li>
+                            </ul>
+                        </li>
+                        <li class="navBlock"><a href="pageShow.aspx?pid=95">联系我们</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+
+        <div class="indexFooter">
+            <li>校址：青岛市崂山区松岭路238号  邮编：266100</li>
+            <li class="indexFooterSlider">
+				<span class = "defaultSpan">Copyright © 2016 中国海洋大学国际教育学院  All Rights Reserved</span>
+				<span style="display:none" class="motivatedSpan"><a href="./admin/index.aspx"style="display:inline;color:white">进入后台</a></span>
+			</li>
+        </div>
+        <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <script type="text/javascript" src="js/respond.js"></script>
+        <script type="text/javascript">$("li").each(function () { if ($(this).children()[0] && $(this).children()[0].innerHTML == $(".containRight h1")[0].innerHTML) { $($(this).children()[0]).addClass("on") } })</script>
+    </form>
+</body>
+</html>

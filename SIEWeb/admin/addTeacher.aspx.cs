@@ -16,7 +16,7 @@ public partial class admin_addPage : System.Web.UI.Page
     {
         using (var db = new SiewebEntities())
         {
-            var tea = new teachers();
+            var tea = new teacher();
             tea.place = TxtPlace.Text.Trim();
             tea.tname = TxtName.Text.Trim();
             tea.phone = TxtPhone.Text.Replace("\n", "<br/>");
@@ -27,7 +27,7 @@ public partial class admin_addPage : System.Web.UI.Page
             tea.updatetime = DateTime.Now;
             tea.describe = TxtDes.Text;
             tea.email = TxtEmail.Text.Trim();
-            db.teachers.Add(tea);
+            db.teacher.Add(tea);
             db.SaveChanges();
             Response.Write("<script>alert('添加成功');window.location.href='teacherslist.aspx'</script>");
         }

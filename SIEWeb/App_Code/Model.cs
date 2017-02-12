@@ -49,8 +49,8 @@ public partial class news
     public System.DateTime updatetime { get; set; }
     public System.DateTime createtime { get; set; }
     public int newclass { get; set; }
-    public int lang { get; set; }
-    public bool iftop { get; set; }
+    public Nullable<int> lang { get; set; }
+    public Nullable<bool> iftop { get; set; }
     public string toppicture { get; set; }
     public string listpicture { get; set; }
 }
@@ -60,20 +60,20 @@ public partial class pages
     public int id { get; set; }
     public string title { get; set; }
     public string body { get; set; }
-    public System.DateTime createtime { get; set; }
-    public System.DateTime updatetime { get; set; }
-    public int belong { get; set; }
+    public Nullable<System.DateTime> createtime { get; set; }
+    public Nullable<System.DateTime> updatetime { get; set; }
+    public Nullable<int> belong { get; set; }
 }
 
 public partial class pics
 {
     public int id { get; set; }
-    public System.DateTime updatetime { get; set; }
-    public System.DateTime createtime { get; set; }
+    public Nullable<System.DateTime> updatetime { get; set; }
+    public Nullable<System.DateTime> createtime { get; set; }
     public string picname { get; set; }
 }
 
-public partial class teachers
+public partial class teacher
 {
     public int id { get; set; }
     public string tname { get; set; }

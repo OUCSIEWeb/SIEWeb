@@ -17,7 +17,7 @@ public partial class admin_addPage : System.Web.UI.Page
                 using(var db = new SiewebEntities())
                 {
 
-                    var tea = db.teachers.First(a => a.id == tid);
+                    var tea = db.teacher.First(a => a.id == tid);
                     TxtName.Text = tea.tname;
                     TxtDes.Text = tea.describe;
                     TxtEmail.Text = tea.email;
@@ -43,7 +43,7 @@ public partial class admin_addPage : System.Web.UI.Page
             using (var db = new SiewebEntities())
             {
                 string str = Server.HtmlDecode(editor.InnerHtml);
-                var tea = db.teachers.FirstOrDefault(a => a.id == tid);
+                var tea = db.teacher.FirstOrDefault(a => a.id == tid);
                 tea.place = TxtPlace.Text.Trim();
                 tea.tname = TxtName.Text.Trim();
                 tea.phone = TxtPhone.Text.Replace("\n", "<br/>");

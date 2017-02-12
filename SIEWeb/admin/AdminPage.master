@@ -32,9 +32,18 @@
                         <ul class="hide">
                             <li><a href="editorPage.aspx?pid=54">学校简介</a></li>
                             <li><a href="editorPage.aspx?pid=55">学院简介</a></li>
-                            <li><a href="editorPage.aspx?pid=56">机构设置</a></li>
+                            <li><a href="editorPage.aspx?pid=56">机构设置</a>
+								<ol class="remain">
+									<li><a href="editorPage.aspx?pid=57">学院办公室</a></li>
+									<li><a href="editorPage.aspx?pid=58">招生工作部</a></li>
+									<li><a href="editorPage.aspx?pid=59">教学工作部</a></li>
+									<li><a href="editorPage.aspx?pid=60">学生事务部</a></li>
+									<li><a href="editorPage.aspx?pid=61">国际合作办学部</a></li>
+							
+								</ol>
+							</li>
                             <li><a href="editorPage.aspx?pid=62">城市简介</a></li>
-                            <li><a href="teacherslist.aspx">院领导</a></li>
+                            <li><a href="teacherslist.aspx">现任领导</a></li>
                         </ul>
                     </li>
                     <li><a href="newslist.aspx">新闻公告</a></li>
@@ -42,7 +51,7 @@
                         <ul class="hide">
                             <li><a href="editorPage.aspx?pid=63">入学条件</a></li>
                             <li><a href="editorPage.aspx?pid=64">申请流程</a></li>
-                            <li><a href="editorPage.aspx?pid=65">招生简章</a></li>
+                            <li><a href="newslist.aspx">招生简章</a></li>
                             <li><a href="editorPage.aspx?pid=66">在线申请</a></li>
                             <li><a href="editorPage.aspx?pid=67">报到流程</a></li>
                             <li><a href="editorPage.aspx?pid=68">费用说明</a></li>
@@ -75,10 +84,21 @@
                         </ul>
                     </li>
 
-                    <li><a href="editorNews.aspx?pid=77">HND项目</a>
+                    <li><a href="newslist.aspx">HND项目</a>
+					 <ul class="hide">
+                                <li><a href="newslist.aspx">招生简章</a></li>
+                                <li><a href="newslist.aspx">教学教务</a></li>
+                                <li><a href="newslist.aspx">学子风采</a></li>
+								<li><a href="editorPage.aspx?pid=103">合作院校</a></li>
+								<li><a href="newslist.aspx">报名表下载</a></li>
+                     </ul>
                     </li>
 
-                    <li><a href="editorNews.aspx?pid=97">中外合作办学</a>
+                    <li><a href="newslist.aspx">中外合作办学</a>
+					 <ul class="hide">
+                                 <li><a href="newslist.aspx">中美合作办学</a></li>
+					             <li><a href="newslist.aspx">中澳合作办学</a></li>
+                    </ul>
                     </li>
 
                     <li><a href="">生活指南</a>
@@ -92,17 +112,18 @@
                             <li><a href="editorPage.aspx?pid=89">生活提示</a></li>
                             <li><a href="editorPage.aspx?pid=90">安全提示</a></li>
                             <li><a href="editorPage.aspx?pid=91">医疗保险</a></li>
-                            <li><a href="editorPage.aspx?pid=92">常用下载</a></li>
+                           
                         </ul>
                     </li>
                     <li><a href="">规章制度</a>
                         <ul class="hide">
-                            <li><a href="editorPage.aspx?pid=93">学院规章制度</a></li>
-                            <li><a href="editorPage.aspx?pid=94">学生规章制度</a></li>
+                            <li><a href="newslist.aspx">学院规章制度</a></li>
+                            <li><a href="newslist.aspx">学生规章制度</a></li>
                         </ul>
                     </li>
                     <li><a href="files.aspx">资料下载</a></li>
                     <li><a href="editorTopPic.aspx">主页图片轮播</a></li>
+                    <li><a href="changePwd.aspx">修改密码</a></li>
                     <li><a href="editorPage.aspx?pid=95">联系我们</a></li>
                 </ul>
             </div>

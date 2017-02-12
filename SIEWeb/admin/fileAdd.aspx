@@ -12,6 +12,8 @@
     <asp:DropDownList ID="DdlKind" runat="server">
        <asp:ListItem value="0">学生资料</asp:ListItem>
        <asp:ListItem value="1">办公资料</asp:ListItem>
+	   <asp:ListItem value="4">报名表下载</asp:ListItem>
+	  
     </asp:DropDownList>
     <br />
     <asp:Button runat="server" Text="提交" ID="BtnOk" OnClick="BtnOk_Click" />

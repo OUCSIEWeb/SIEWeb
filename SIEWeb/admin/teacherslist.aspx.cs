@@ -14,7 +14,7 @@ public partial class admin_teacherslist : System.Web.UI.Page
             //绑定        
             using (var db = new SiewebEntities())
             {
-                var teas = from it in db.teachers
+                var teas = from it in db.teacher
                            select it;
                 RptTeacher.DataSource = teas.ToList();
                 RptTeacher.DataBind();
@@ -38,8 +38,8 @@ public partial class admin_teacherslist : System.Web.UI.Page
             {
                 string str = e.CommandArgument.ToString();
                 int tid = Convert.ToInt32(e.CommandArgument.ToString());
-                var tea = db.teachers.FirstOrDefault(a => a.id == tid);
-                db.teachers.Remove(tea);
+                var tea = db.teacher.FirstOrDefault(a => a.id == tid);
+                db.teacher.Remove(tea);
                 db.SaveChanges();
                 Response.Write("<script>alert('删除成功');window.location.href='teacherslist.aspx'</script>");
             }

@@ -24,10 +24,10 @@ public partial class SiewebEntities : DbContext
     }
 
     public DbSet<admins> admins { get; set; }
+    public DbSet<faqs> faqs { get; set; }
+    public DbSet<files> files { get; set; }
     public DbSet<news> news { get; set; }
     public DbSet<pages> pages { get; set; }
-    public DbSet<teachers> teachers { get; set; }
-    public DbSet<files> files { get; set; }
-    public DbSet<faqs> faqs { get; set; }
     public DbSet<pics> pics { get; set; }
+    public DbSet<teacher> teacher { get; set; }
 }

@@ -64,6 +64,7 @@
                 <ul class="navContain" id="navContain">
                     <li id="li_student" runat="server"><a href="filesDownload.aspx?viewlevel=0">学生资料</a></li>
                     <li id="li_teacher" runat="server"><a href="filesDownload.aspx?viewlevel=1">办公资料</a></li>
+					  <li id="li_chart" runat="server"><a href="filesDownload.aspx?viewlevel=4">报名表下载</a></li>
                 </ul>
             </div>
 

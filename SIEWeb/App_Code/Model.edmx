@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="SiewebModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+      <Schema Namespace="SiewebModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityType Name="admins">
           <Key>
             <PropertyRef Name="id" />
@@ -49,32 +49,32 @@
           <Property Name="updatetime" Type="datetime" Nullable="false" />
           <Property Name="createtime" Type="datetime" Nullable="false" />
           <Property Name="newclass" Type="int" Nullable="false" />
-          <Property Name="lang" Type="int" Nullable="false" />
-          <Property Name="iftop" Type="bit" Nullable="false" />
-          <Property Name="toppicture" Type="nvarchar" MaxLength="100" Nullable="false" />
-          <Property Name="listpicture" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="lang" Type="int" />
+          <Property Name="iftop" Type="bit" />
+          <Property Name="toppicture" Type="nvarchar" MaxLength="100" />
+          <Property Name="listpicture" Type="nvarchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="pages">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="title" Type="nvarchar" MaxLength="100" Nullable="false" />
-          <Property Name="body" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="createtime" Type="datetime" Nullable="false" />
-          <Property Name="updatetime" Type="datetime" Nullable="false" />
-          <Property Name="belong" Type="int" Nullable="false" />
+          <Property Name="title" Type="nvarchar" MaxLength="100" />
+          <Property Name="body" Type="nvarchar(max)" />
+          <Property Name="createtime" Type="datetime" />
+          <Property Name="updatetime" Type="datetime" />
+          <Property Name="belong" Type="int" />
         </EntityType>
         <EntityType Name="pics">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="updatetime" Type="datetime" Nullable="false" />
-          <Property Name="createtime" Type="datetime" Nullable="false" />
-          <Property Name="picname" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="updatetime" Type="datetime" />
+          <Property Name="createtime" Type="datetime" />
+          <Property Name="picname" Type="nvarchar" MaxLength="100" />
         </EntityType>
-        <EntityType Name="teachers">
+        <EntityType Name="teacher">
           <Key>
             <PropertyRef Name="id" />
           </Key>
@@ -97,9 +97,10 @@
           <EntitySet Name="news" EntityType="Self.news" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="pages" EntityType="Self.pages" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="pics" EntityType="Self.pics" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="teachers" EntityType="Self.teachers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="teacher" EntityType="Self.teacher" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SiewebModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
@@ -113,6 +114,30 @@
           <Property Name="createtime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="updatetime" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
+        <EntityType Name="faqs">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sname" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="body" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="updatetime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="reply" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="state" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="files">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="filename" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="lang" Type="Int32" Nullable="false" />
+          <Property Name="viewlevel" Type="Int32" Nullable="false" />
+        </EntityType>
         <EntityType Name="news">
           <Key>
             <PropertyRef Name="id" />
@@ -123,23 +148,32 @@
           <Property Name="updatetime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="createtime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="newclass" Type="Int32" Nullable="false" />
-          <Property Name="lang" Type="Int32" Nullable="false" />
-          <Property Name="iftop" Type="Boolean" Nullable="false" />
-          <Property Name="toppicture" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="listpicture" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="lang" Type="Int32" />
+          <Property Name="iftop" Type="Boolean" />
+          <Property Name="toppicture" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="listpicture" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="pages">
           <Key>
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="body" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="createtime" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="updatetime" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="belong" Type="Int32" Nullable="false" />
+          <Property Name="title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="body" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="createtime" Type="DateTime" Precision="3" />
+          <Property Name="updatetime" Type="DateTime" Precision="3" />
+          <Property Name="belong" Type="Int32" />
         </EntityType>
-        <EntityType Name="teachers">
+        <EntityType Name="pics">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="updatetime" Type="DateTime" Precision="3" />
+          <Property Name="createtime" Type="DateTime" Precision="3" />
+          <Property Name="picname" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="teacher">
           <Key>
             <PropertyRef Name="id" />
           </Key>
@@ -157,46 +191,13 @@
         </EntityType>
         <EntityContainer Name="SiewebEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="admins" EntityType="Self.admins" />
+          <EntitySet Name="faqs" EntityType="Self.faqs" />
+          <EntitySet Name="files" EntityType="Self.files" />
           <EntitySet Name="news" EntityType="Self.news" />
           <EntitySet Name="pages" EntityType="Self.pages" />
-          <EntitySet Name="teachers" EntityType="Self.teachers" />
-          <EntitySet Name="files" EntityType="SiewebModel.files" />
-          <EntitySet Name="faqs" EntityType="SiewebModel.faqs" />
-          <EntitySet Name="pics" EntityType="SiewebModel.pics" />
+          <EntitySet Name="pics" EntityType="Self.pics" />
+          <EntitySet Name="teacher" EntityType="Self.teacher" />
         </EntityContainer>
-        <EntityType Name="files">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="filename" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="createtime" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="lang" Type="Int32" Nullable="false" />
-          <Property Name="viewlevel" Type="Int32" Nullable="false" />
-        </EntityType>
-        <EntityType Name="faqs">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="sname" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="title" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="body" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="createtime" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="updatetime" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="reply" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="state" Type="Int32" Nullable="false" />
-        </EntityType>
-        <EntityType Name="pics">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="updatetime" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="createtime" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="picname" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
-        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -214,19 +215,45 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="faqs">
+            <EntityTypeMapping TypeName="SiewebModel.faqs">
+              <MappingFragment StoreEntitySet="faqs">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="sname" ColumnName="sname" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="body" ColumnName="body" />
+                <ScalarProperty Name="createtime" ColumnName="createtime" />
+                <ScalarProperty Name="updatetime" ColumnName="updatetime" />
+                <ScalarProperty Name="reply" ColumnName="reply" />
+                <ScalarProperty Name="state" ColumnName="state" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="files">
+            <EntityTypeMapping TypeName="SiewebModel.files">
+              <MappingFragment StoreEntitySet="files">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="filename" ColumnName="filename" />
+                <ScalarProperty Name="createtime" ColumnName="createtime" />
+                <ScalarProperty Name="lang" ColumnName="lang" />
+                <ScalarProperty Name="viewlevel" ColumnName="viewlevel" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="news">
             <EntityTypeMapping TypeName="SiewebModel.news">
               <MappingFragment StoreEntitySet="news">
-                <ScalarProperty Name="listpicture" ColumnName="listpicture" />
-                <ScalarProperty Name="toppicture" ColumnName="toppicture" />
-                <ScalarProperty Name="iftop" ColumnName="iftop" />
-                <ScalarProperty Name="lang" ColumnName="lang" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="title" ColumnName="title" />
                 <ScalarProperty Name="body" ColumnName="body" />
                 <ScalarProperty Name="updatetime" ColumnName="updatetime" />
                 <ScalarProperty Name="createtime" ColumnName="createtime" />
                 <ScalarProperty Name="newclass" ColumnName="newclass" />
+                <ScalarProperty Name="lang" ColumnName="lang" />
+                <ScalarProperty Name="iftop" ColumnName="iftop" />
+                <ScalarProperty Name="toppicture" ColumnName="toppicture" />
+                <ScalarProperty Name="listpicture" ColumnName="listpicture" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -242,10 +269,19 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="teachers">
-            <EntityTypeMapping TypeName="SiewebModel.teachers">
-              <MappingFragment StoreEntitySet="teachers">
-                <ScalarProperty Name="lang" ColumnName="lang" />
+          <EntitySetMapping Name="pics">
+            <EntityTypeMapping TypeName="SiewebModel.pics">
+              <MappingFragment StoreEntitySet="pics">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="updatetime" ColumnName="updatetime" />
+                <ScalarProperty Name="createtime" ColumnName="createtime" />
+                <ScalarProperty Name="picname" ColumnName="picname" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="teacher">
+            <EntityTypeMapping TypeName="SiewebModel.teacher">
+              <MappingFragment StoreEntitySet="teacher">
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="tname" ColumnName="tname" />
                 <ScalarProperty Name="phone" ColumnName="phone" />
@@ -256,42 +292,7 @@
                 <ScalarProperty Name="place" ColumnName="place" />
                 <ScalarProperty Name="describe" ColumnName="describe" />
                 <ScalarProperty Name="email" ColumnName="email" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="files">
-            <EntityTypeMapping TypeName="SiewebModel.files">
-              <MappingFragment StoreEntitySet="files">
-                <ScalarProperty Name="viewlevel" ColumnName="viewlevel" />
                 <ScalarProperty Name="lang" ColumnName="lang" />
-                <ScalarProperty Name="createtime" ColumnName="createtime" />
-                <ScalarProperty Name="filename" ColumnName="filename" />
-                <ScalarProperty Name="title" ColumnName="title" />
-                <ScalarProperty Name="id" ColumnName="id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="faqs">
-            <EntityTypeMapping TypeName="SiewebModel.faqs">
-              <MappingFragment StoreEntitySet="faqs">
-                <ScalarProperty Name="state" ColumnName="state" />
-                <ScalarProperty Name="reply" ColumnName="reply" />
-                <ScalarProperty Name="updatetime" ColumnName="updatetime" />
-                <ScalarProperty Name="createtime" ColumnName="createtime" />
-                <ScalarProperty Name="body" ColumnName="body" />
-                <ScalarProperty Name="title" ColumnName="title" />
-                <ScalarProperty Name="sname" ColumnName="sname" />
-                <ScalarProperty Name="id" ColumnName="id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="pics">
-            <EntityTypeMapping TypeName="SiewebModel.pics">
-              <MappingFragment StoreEntitySet="pics">
-                <ScalarProperty Name="picname" ColumnName="picname" />
-                <ScalarProperty Name="createtime" ColumnName="createtime" />
-                <ScalarProperty Name="updatetime" ColumnName="updatetime" />
-                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

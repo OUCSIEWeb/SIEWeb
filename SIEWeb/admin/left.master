@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/indexMaster.master" AutoEventWireup="true" CodeFile="left.master.cs" Inherits="admin_left" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div class="containAbout">
+        <div class="containBanner">
+            <div class="indexMainBanner">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="img-responsive" src="images/banner_2.jpg">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="images/banner_2.jpg">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="images/banner_2.jpg">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="containLeft" id="Div0" runat="server" visible="false">
+                <h3>关于我们</h3>
+                <ul class="navContain" id="navContain">
+                    <li><a href="pageShow.aspx?pid=54">学校简介</a></li>
+                    <li><a href="pageShow.aspx?pid=55">学院简介</a></li>
+                    <li><a href="pageShow.aspx?pid=56">机构设置</a></li>
+                    <ul class="navSlide">
+						<li><a href="pageShow.aspx?pid=57">学院办公室</a></li>
+						<li><a href="pageShow.aspx?pid=58">招生工作部</a></li>
+						<li><a href="pageShow.aspx?pid=59">教学工作部</a></li>
+						<li><a href="pageShow.aspx?pid=60">学生事务部</a></li>
+						<li><a href="pageShow.aspx?pid=61">国际合作办学部</a></li>
+					</ul>
+                    <li><a href="pageShow.aspx?pid=62">城市简介</a></li>
+                    <li><a href="teachers.aspx">现任领导</a></li>
+                </ul>
+            </div>
+
+            <div class="containLeft" id="Div1" runat="server" visible="false">
+                <h3>入学申请</h3>
+                <ul class="navContain" id="navContain">
+                    <li><a href="pageShow.aspx?pid=63">入学条件</a></li>
+                    <li><a href="pageShow.aspx?pid=64">申请流程</a></li>
+                    <li><a href="pageShow.aspx?pid=65">招生简章</a></li>
+                    <li><a href="pageShow.aspx?pid=66">在线申请</a></li>
+                    <li><a href="pageShow.aspx?pid=67">报到流程</a></li>
+                    <li><a href="pageShow.aspx?pid=68">费用说明</a></li>
+                </ul>
+            </div>
+
+            <div class="containLeft" id="Div2" runat="server" visible="false">
+                <h3>专业学习</h3>
+                <ul class="navContain" id="navContain">
+                    <li><a href="pageShow.aspx?pid=69">博士专业</a></li>
+                    <li><a href="pageShow.aspx?pid=70">硕士专业</a></li>
+                    <li><a href="pageShow.aspx?pid=71">本科专业</a></li>
+                    <li><a href="pageShow.aspx?pid=72">英文授课专业</a></li>
+                    <li><a href="pageShow.aspx?pid=73">汉语言学习</a></li>
+                    <li><a href="pageShow.aspx?pid=74">课程安排</a></li>
+                    <li><a href="pageShow.aspx?pid=75">导师介绍</a></li>
+                    <li><a href="pageShow.aspx?pid=76">学位认证</a></li>
+
+                </ul>
+            </div>
+
+
+
+            <div class="containLeft" id="Div4" runat="server" visible="false">
+                <h3>奖学金</h3>
+                <ul class="navContain" id="navContain">
+                    <li><a href="pageShow.aspx?pid=79">中国政府奖学金</a></li>
+                    <li><a href="pageShow.aspx?pid=80">中国政府海洋奖学金</a></li>
+                    <li><a href="pageShow.aspx?pid=81">孔子学院奖学金</a></li>
+                    <li><a href="pageShow.aspx?pid=82">校长奖学金</a></li>
+                </ul>
+            </div> 
+
+            <div class="containLeft" id="Div3" runat="server" visible="false">
+                <h3>HND项目</h3>
+            </div>
+
+            <div class="containLeft" id="Div8" runat="server" visible="false">
+                <h3>中外合作办学</h3>
+            </div>
+
+            <div class="containLeft" id="Div5" runat="server" visible="false">
+                <h3>生活指南</h3>
+                <ul class="navContain" id="navContain">
+                    <li><a href="pageShow.aspx?pid=83">留学生手册</a></li>
+                    <li><a href="pageShow.aspx?pid=84">学校校历</a></li>
+                    <li><a href="pageShow.aspx?pid=85">证照办理</a></li>
+                    <li><a href="pageShow.aspx?pid=86">校园设施</a></li>
+                    <li><a href="pageShow.aspx?pid=87">公寓住宿</a></li>
+                    <li><a href="pageShow.aspx?pid=88">学生社团</a></li>
+                    <li><a href="pageShow.aspx?pid=89">生活提示</a></li>
+                    <li><a href="pageShow.aspx?pid=90">安全提示</a></li>
+                    <li><a href="pageShow.aspx?pid=91">医疗保险</a></li>
+                </ul>
+            </div>
+
+            <div class="containLeft" id="Div6" runat="server" visible="false">
+                <h3>规章制度</h3>
+                <ul class="navContain" id="navContain">
+                    <li><a href="pageShow.aspx?pid=93">学院规章制度</a></li>
+                    <li><a href="pageShow.aspx?pid=94">学生规章制度</a></li>
+                </ul>
+            </div>
+
+            <div class="containLeft" id="Div7" runat="server" visible="false">
+                <h3>联系我们</h3>
+                <ul class="navContain" id="navContain">
+                    <%--<li><a href="pageShow.aspx?pid=93">常见问题</a></li>
+                    <li><a href="pageShow.aspx?pid=94">我要提问</a></li>--%>
+                </ul>
+            </div>
+
+            <div class="containRight">
+                <asp:ContentPlaceHolder runat="server" ID="Cout1"></asp:ContentPlaceHolder>
+            </div>
+            <div class="clearFloat"></div>
+        </div>
+</asp:Content>
+

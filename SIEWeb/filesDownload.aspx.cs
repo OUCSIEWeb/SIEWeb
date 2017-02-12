@@ -181,12 +181,22 @@ public partial class newslist : System.Web.UI.Page
                 lbKind.Text = "学生资料";
                 li_student.Attributes["class"] = "on";
                 li_teacher.Attributes["class"] = "";
+				li_chart.Attributes["class"] = "";
             }
             if (viewlevel == 1)
             {
                 lbKind.Text = "办公资料";
                 li_student.Attributes["class"] = "";
+				li_chart.Attributes["class"] = "";
                 li_teacher.Attributes["class"] = "on";
+            
+            }
+			  if (viewlevel == 4)
+            {
+                lbKind.Text = "报名表下载";
+                li_student.Attributes["class"] = "";
+				li_chart.Attributes["class"] = "on";
+                li_teacher.Attributes["class"] = "";
             
             }
         }

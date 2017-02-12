@@ -38,13 +38,13 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <img class="img-responsive" src="images/banner_2.jpg">
+                            <img class="img-responsive" src="images/banner_1.jpg">
                         </div>
                         <div class="item">
                             <img class="img-responsive" src="images/banner_2.jpg">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="images/banner_2.jpg">
+                            <img class="img-responsive" src="images/banner_3.jpg">
                         </div>
                     </div>
 

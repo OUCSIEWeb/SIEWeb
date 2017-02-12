@@ -4,9 +4,17 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
         <asp:DropDownList ID="DdlSelect"  runat="server">
-        <asp:ListItem Text="新闻速递" Value="0"></asp:ListItem>
+       <asp:ListItem Text="新闻速递" Value="0"></asp:ListItem>
         <asp:ListItem Text="通知公告" Value="1"></asp:ListItem>
         <asp:ListItem Text="学生家园" Value="2"></asp:ListItem>
+		<asp:ListItem Text="HND招生简章" Value="3"></asp:ListItem>
+		<asp:ListItem Text="HND教学教务" Value="4"></asp:ListItem>
+		<asp:ListItem Text="HND学子风采" Value="5"></asp:ListItem>
+		<asp:ListItem Text="中美合作项目" Value="6"></asp:ListItem>
+		<asp:ListItem Text="中澳合作项目" Value="7"></asp:ListItem>
+		<asp:ListItem Text="学院规章制度" Value="8"></asp:ListItem>
+		<asp:ListItem Text="学生规章制度" Value="9"></asp:ListItem>
+		<asp:ListItem Text="入学招生简章" Value="10"></asp:ListItem>
     </asp:DropDownList>
     <asp:Button ID="BtnQuery" runat="server" Text="确认查找"  OnClick="BtnQuery_Click"/>
     <table>
@@ -26,6 +34,6 @@
             </ItemTemplate>
         </asp:Repeater>
     </table>
-    <asp:Button runat="server" ID="BtnTAdd" OnClick="BtnTAdd_Click" Text="添加新闻" />
+    <asp:Button runat="server" ID="BtnTAdd" OnClick="BtnTAdd_Click" Text="添加新闻"  Height="29px" Width="180px" />
 </asp:Content>
 
