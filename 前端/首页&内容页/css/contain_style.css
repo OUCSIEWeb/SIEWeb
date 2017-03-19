@@ -1,3 +1,6 @@
+td{
+	border: solid 1px;
+}
 a{
 	color: #474747;
 	display: block;
@@ -15,7 +18,7 @@ a{
 	font-size: 24px;
     color: rgba(255,255,255,0.8);
     /*text-align: center;*/
-    padding: 24px 80px;
+    padding: 24px 76px;
 	background: #63c8fe;
 	margin: 0;
 }
@@ -45,7 +48,7 @@ a{
 	display: inline-block;
 }
 .navSlide a,.navContain a{
-	color: rgba(255,255,255,0.8);
+	color: rgba(255,255,255,0.7);
 }
 .navSlide a:hover,.navContain a:hover{
 	color: rgba(255,255,255,1);

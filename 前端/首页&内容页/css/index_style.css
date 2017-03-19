@@ -7,7 +7,6 @@ body{
 body,div,dl,dt,dd,ul,ol,li,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
 body,h1 { color:#555; font-family: "微软雅黑",Verdana, Arial, Helvetica, sans-serif; }
 h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; font-family: "微软雅黑",Verdana, Arial, Helvetica, sans-serif;}
-address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
 a { text-decoration:none; }
 a:link{text-decoration: none;}
 a:visited { text-decoration: none !important;}
@@ -31,6 +30,12 @@ html {overflow-y: scroll;}
 
 div.clear{
 	clear:both;
+}
+
+i{
+	float: left;
+	position: relative;
+	top: 5px !important;
 }
 
 /*index*/
@@ -87,7 +92,7 @@ div.clear{
 }
 .indexHeader .indexHeaderNav ul{
 	display: block;
-	width:1190px;
+	width:1250px;
 	margin: 0 auto;
 }
 /*ul.navSlideDown{
@@ -97,7 +102,7 @@ div.clear{
 	float: left;	
 	height: 50px;
 	line-height: 50px;
-	width: 9%;
+	width: 11%;
 	position: relative;
 }
 .indexHeader .indexHeaderNav ul li.navBlock:hover{
@@ -116,10 +121,16 @@ div.clear{
 	color: white;
 }
 .indexHeader .indexHeaderNav ul.navSlideDown{
-	width: 160px;
+	width: 200px;
 	z-index: 9999;
 	position: absolute;
-	left: -28px;
+	left: -33px;
+}
+.indexHeader .indexHeaderNav ul.Scholarshipnav{
+	width: 240px;
+	z-index: 9999;
+	position: absolute;
+	left: -51px;
 }
 .indexHeader .indexHeaderNav ul.navSlideDown li{
 	width: 100%;
@@ -139,10 +150,18 @@ div.clear{
 	color: white;
 	display: block;
 	width: 100%;
-	font-size: 18px;
+	font-size: 14px;
 	height: 50px;
 	text-align: center;
 }
+
+.Scholarshipnav .navSlideDown{
+	width: 300px;
+	z-index: 9999;
+	position: absolute;
+	left: -33px;
+}
+
 .indexMain{
 	width: 100%;
 	z-index: 1;
@@ -254,7 +273,7 @@ div.clear{
 }
 
 .indexMainInnerChild .childInner ul li a{
-	width: 85%;
+	width: 80%;
 	font-size: 16px;
 	color: #404040;
 	white-space: nowrap; 
@@ -278,15 +297,21 @@ div.clear{
 .indexMainInnerChild .childInner ul li a:hover{
 	color: #3CA7E1;
 }
-
+/*
 .indexMainInnerChild .childInner ul li a:before{
 	content: url(../images/point.png);
 }
+*/
 
 .childLittle {
-	margin-bottom: 30px;
+	width: 100%;
+	height: 100px;
+	background: #f2f2f2;
 }
-
+.childLittle li{
+	text-align: center;
+	line-height: 100px;
+}
 .childLittle li a{
 	font-size: 14px;
 	color: #2980b9;
