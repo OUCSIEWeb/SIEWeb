@@ -58,7 +58,7 @@ public partial class admin_addPage : System.Web.UI.Page
         }
         catch
         {
-            Response.Redirect("<script>alert('修改失败');window.location.href='teacherslist.aspx'</script>");
+            Response.Write("<script>alert('修改失败');window.location.href='teacherslist.aspx'</script>");
         }
     }
 }

@@ -5,6 +5,10 @@ a{
 	color: #474747;
 	display: block;
 }
+table { 
+	border-collapse:collapse;
+	font-family:"宋体"; 
+}
 .containAbout{
 	width:1190px;
 	margin: 0 auto;
