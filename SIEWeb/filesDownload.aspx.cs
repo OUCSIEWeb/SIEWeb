@@ -36,7 +36,7 @@ public partial class newslist : System.Web.UI.Page
             int viewlevel = Convert.ToInt32(Request.QueryString["viewlevel"].ToString());
             using (var db = new SiewebEntities())
             {
-                var se = from items in db.files where items.viewlevel==viewlevel
+                var se = from items in db.files where items.viewlevel==viewlevel && items.lang == 0
                          orderby items.createtime descending
                          select new { items.id, items.title, items.filename, items.createtime };
                 int totalAmount = se.Count();
@@ -73,7 +73,7 @@ public partial class newslist : System.Web.UI.Page
                 using (var db = new SiewebEntities())
                 {
                     var se = from it in db.files
-                             where it.viewlevel == viewlevel
+                             where it.viewlevel == viewlevel && it.lang == 0
                              select it;
                     int totalAmount = se.Count();
                     pageCount = (int)Math.Ceiling((double)totalAmount / (double)pageSize); //总页数，向上取整

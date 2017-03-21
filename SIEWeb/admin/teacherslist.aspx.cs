@@ -15,6 +15,7 @@ public partial class admin_teacherslist : System.Web.UI.Page
             using (var db = new SiewebEntities())
             {
                 var teas = from it in db.teacher
+                           where it.lang==0
                            select it;
                 RptTeacher.DataSource = teas.ToList();
                 RptTeacher.DataBind();

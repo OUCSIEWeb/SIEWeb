@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/indexMaster.master" AutoEventWireup="true" CodeFile="newsshow.aspx.cs" Inherits="newsshow" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="./indexMaster.master" AutoEventWireup="true" CodeFile="newsshow.aspx.cs" Inherits="newsshow" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -17,13 +17,13 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <img class="img-responsive" src="images/banner_2.jpg">
+                            <img class="img-responsive" src="../images/banner_1.jpg">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="images/banner_2.jpg">
+                            <img class="img-responsive" src="../images/banner_2.jpg">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="images/banner_2.jpg">
+                            <img class="img-responsive" src="../images/banner_3.jpg">
                         </div>
                     </div>
 
@@ -45,6 +45,14 @@
                     <li runat="server" id="news_li"><a href="newslist.aspx?classid=0">新闻速递</a></li>
                     <li runat="server" id="notice_li"><a href="newslist.aspx?classid=1">通知公告</a></li>
                     <li runat="server" id="student_li"><a href="newslist.aspx?classid=2">学生家园</a></li> 
+					<li ><a href="HNDlist.aspx?classid=3">HND招生简章</a></li> 
+					<li ><a href="HNDlist.aspx?classid=4">HND教学教务</a></li> 
+					<li ><a href="HNDlist.aspx?classid=5">HND学子风采</a></li>
+					<li ><a href="ZAlist.aspx?classid=6">中美合作办学项目</a></li> 
+					<li ><a href="ZAlist.aspx?classid=7">中澳合作办学项目</a></li> 
+					<li><a href="Rulelist.aspx?classid=8">学院规章制度</a></li>
+					<li><a href="Rulelist.aspx?classid=9">学生规章制度</a></li>
+					<li ><a href="ZAlist2.aspx?classid=10">入学招生简章</a></li>
                 </ul>
             </div>
 
@@ -52,7 +60,7 @@
                 <asp:Repeater runat="server" ID="Rpt">
                     <ItemTemplate>
                        <h1 class="alignCenter"> <%#Eval("title")%></h1>
-                       <span class="alignCenter"><%#Eval("updatetime")%></span><br /><br />
+                       <!--<span class="alignCenter"><%#Eval("updatetime")%></span><br /><br />-->
                         <%#Eval("body") %>
                     </ItemTemplate>
                 </asp:Repeater>

@@ -1,7 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/indexMaster.master" AutoEventWireup="true" CodeFile="filesDownload.aspx.cs" Inherits="newslist" %>
+﻿
+<%@ Page Title="" Language="C#" MasterPageFile="./indexMaster.master" AutoEventWireup="true" CodeFile="searchInfo.aspx.cs" Inherits="searchInfo" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-        <%--页面样式，标题在左时间在右--%>
+    <%--页面样式，标题在左时间在右--%>
     <style>
         .containRight a{
             float:left;
@@ -38,13 +39,13 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <img class="img-responsive" src="images/banner_2.jpg">
+                            <img class="img-responsive" src="../images/banner_1.jpg">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="images/banner_2.jpg">
+                            <img class="img-responsive" src="../images/banner_2.jpg">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="images/banner_2.jpg">
+                            <img class="img-responsive" src="../images/banner_3.jpg">
                         </div>
                     </div>
 
@@ -59,22 +60,18 @@
                     </a>
                 </div>
             </div>
-            <div class="containLeft" runat="server">
-                <h3>资料下载</h3>
-                <ul class="navContain" id="navContain">
-                    <li id="li_student" runat="server"><a href="filesDownload.aspx?viewlevel=0">学生资料</a></li>
-                    <li id="li_teacher" runat="server"><a href="filesDownload.aspx?viewlevel=1">办公资料</a></li>
-					
-                </ul>
+            <div id="Div1" class="containLeft" runat="server">
+                <h3>信息搜索</h3>
+             
             </div>
-
-            <div class="containRight">
-                <h1><asp:Label ID="lbKind" runat="server"></asp:Label></h1>
+            <h1><asp:Label ID="lbNone" runat="server" font-size="30px" Visible="false"></asp:Label></h1>
+            <div class="containRight" id="rep" runat="server" visible="true">
+                <h1><asp:Label ID="lbKind" runat="server" Text="搜索内容："></asp:Label></h1>
                 
-                <asp:Repeater runat="server" ID="Rpt"> 
+                <asp:Repeater runat="server" ID="Rpt">
                     <ItemTemplate>
-                        <a href="<%#"."+Eval("filename")%>"><%#Eval("title")%></a>
-                        <%#Eval("createtime")%><br />
+                        <a <%--style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>"--%> href="newsshow.aspx?nid=<%#Eval("id")%>"><%#Eval("title")%></a>
+                      <font  <%--style= "color:<%# Container.ItemIndex == 0 ?  "red":""%>">--%>  <%#Eval("updatetime","{0:yyyy-MM-dd}")%></font><br />
                     </ItemTemplate>
                 </asp:Repeater>
                  <br />
@@ -86,12 +83,19 @@
                 <asp:Label ID="lbNow" runat="server" Text="1"></asp:Label>
                 /
                 <asp:Label ID="lbTotal" runat="server" Text="1"></asp:Label>
-                转<asp:TextBox ID="TxtPageNum" runat="server" Height="22px" style="font-size: large" Width="37px">1</asp:TextBox>
+                转<asp:TextBox ID="TxtPageNum" runat="server" Height="23px" style="font-size: large" Width="37px">1</asp:TextBox>
                 页
                 <asp:Button ID="BtnJumpPage" runat="server" OnClick="BtnJumpPage_Click" Text="GO" />
             </div>
             <div class="clearFloat"></div>
         </div>
             </div>
+
+    <script>
+        $("#navContain li").click(function () {
+            $("#navContain li").removeClass("on");
+            $(this).addClass("on");
+        })
+    </script>
 </asp:Content>
 

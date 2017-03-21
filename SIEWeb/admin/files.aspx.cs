@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class files : System.Web.UI.Page
+public partial class files1 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -14,6 +14,7 @@ public partial class files : System.Web.UI.Page
             using (var db = new SiewebEntities())
             {
                 var fs = from it in db.files
+                         where it.lang ==0
                          orderby it.createtime descending
                          select it;
                 Rpt.DataSource = fs.ToList();

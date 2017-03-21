@@ -38,7 +38,7 @@ public partial class searchInfo : System.Web.UI.Page
              using (var db = new SiewebEntities())
             {
                 var se = from items in db.news
-                         where items.title.Contains(searchInfo)
+                         where items.title.Contains(searchInfo) && items.lang == 0
                          orderby items.id descending
                          select new { items.id, items.title, items.newclass, items.createtime, items.body, items.updatetime};
                 int totalAmount = se.Count();
@@ -79,7 +79,7 @@ public partial class searchInfo : System.Web.UI.Page
                 using (var db = new SiewebEntities())
                 {
                     var se = from it in db.news
-                             where it.title.Contains(searchInfo)
+                             where it.title.Contains(searchInfo) && it.lang == 0
                              select it;
                     int totalAmount = se.Count();
                     pageCount = (int)Math.Ceiling((double)totalAmount / (double)pageSize); //总页数，向上取整

@@ -24,7 +24,7 @@ public partial class admin_teacherslist : System.Web.UI.Page
             using(var db = new SiewebEntities())
             {
                 var select = from it in db.news
-                             where it.newclass == classid
+                             where it.newclass == classid && it.lang ==0
                              orderby it.updatetime descending
                              select it;
                 Rpt.DataSource = select.ToList();

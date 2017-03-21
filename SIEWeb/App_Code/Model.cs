@@ -49,8 +49,8 @@ public partial class news
     public System.DateTime updatetime { get; set; }
     public System.DateTime createtime { get; set; }
     public int newclass { get; set; }
-    public Nullable<int> lang { get; set; }
-    public Nullable<bool> iftop { get; set; }
+    public int lang { get; set; }
+    public bool iftop { get; set; }
     public string toppicture { get; set; }
     public string listpicture { get; set; }
 }

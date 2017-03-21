@@ -33,8 +33,10 @@ public partial class admin_fileAdd : System.Web.UI.Page
                 using(var db = new SiewebEntities())
                 {
                     var fs = new files();
+                    
                     fs.title = TxtTitle.Text;
                     fs.filename = finalname;
+                    fs.lang = 0;
                     fs.createtime = DateTime.Now;
                     fs.viewlevel =Convert.ToInt32( DdlKind.SelectedValue.ToString());
                     db.files.Add(fs);

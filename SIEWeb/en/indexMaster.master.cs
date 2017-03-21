@@ -11,4 +11,10 @@ public partial class indexMaster : System.Web.UI.MasterPage
     {
 
     }
+
+    protected void btnSearch_Click(object sender, EventArgs e)
+    {
+        Session["searchInfo"] = txtSearch.Text;
+        Response.Redirect("searchInfo.aspx");
+    }
 }

@@ -19,7 +19,7 @@ public partial class newsshow : System.Web.UI.Page
                 using (var db = new SiewebEntities())
                 {
                     var se = from it in db.news
-                             where it.id == nid
+                             where it.id == nid && it.lang == 0
                              select it;
                     news News = db.news.SingleOrDefault(a => a.id == nid);   
                     if (se.ToList().Count == 0)

@@ -55,7 +55,7 @@ public partial class enterRules : System.Web.UI.Page
         using (var db = new SiewebEntities())
         {
             var se = from items in db.news
-                     where items.newclass == classid
+                     where items.newclass == classid && items.lang == 0
                      orderby items.id descending
                      select new { items.id, items.title, items.newclass, items.createtime, items.body, items.updatetime };
             int totalAmount = se.Count();
@@ -87,7 +87,7 @@ public partial class enterRules : System.Web.UI.Page
             using (var db = new SiewebEntities())
             {
                 var se = from it in db.news
-                         where it.newclass == classid
+                         where it.newclass == classid && it.lang == 0
                          select it;
                 int totalAmount = se.Count();
                 pageCount = (int)Math.Ceiling((double)totalAmount / (double)pageSize); //总页数，向上取整

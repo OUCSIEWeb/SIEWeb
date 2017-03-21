@@ -15,7 +15,8 @@ public partial class teachers : System.Web.UI.Page
             using(var db = new SiewebEntities())
             {
                 var se = from it in db.teacher
-                         orderby it.title descending
+                         where it.lang ==1
+                         orderby it.updatetime descending
                          select it;
                 Rpt.DataSource = se.ToList();
                 Rpt.DataBind();
